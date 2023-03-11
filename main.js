@@ -1,5 +1,7 @@
 // Console.log
 
+
+
 console.log("Initializing...")
 for (let i = 0; i < 5; i++) {
   console.count("Waiting...");
@@ -15,7 +17,7 @@ console.log("Updating to the latest website version...")
 for (let i = 0; i < 5; i++) {
   console.count("Waiting...");
 }
-console.log("Updated to version 1.5")
+console.log("Updated to website version 1.6")
 console.log("Fetching files")
 console.log("Injecting Html files...")
 console.log("Injecting Css files...")
@@ -35,24 +37,6 @@ console.log("All files have been installed correctly enjoy your stay :)")
 
 //console.error
 
-console.error
-
-Promise.any([ 
-  Promise.reject(new Error("Error found")), 
-]).catch(e => { 
-  console.log(e instanceof AggregateError); // true 
-  console.log(e.message);                   // "All Promises rejected" 
-  console.log(e.name);                      // "AggregateError" 
-  console.log(e.errors);                    // [ Error: "some error" ] 
-}); 
-
-try { 
-  var num = 10.123.toFixed(-1); 
-} catch (e) { 
-  console.error(e instanceof RangeError); // true 
-  console.error(e.message);               // argument must be between 0-100 
-  console.error(e.name);                  // RangeError 
-} 
 
 
 
@@ -165,7 +149,6 @@ const fadeEffect = setInterval(() => {
   }
 }, 200);
 
-window.addEventListener('load', fadeEffect);
 
 
 $('.badge').on('click', function() {
