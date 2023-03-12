@@ -4,4 +4,6 @@ I decided to make this open src, I just used Rampage as something to test my web
 
 Also im not good with github so my fault.
 
+You can veiw the website here:  https://totallynotluna1.github.io/RampageMenu.github.io/
+
 :)
