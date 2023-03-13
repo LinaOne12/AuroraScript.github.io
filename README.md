@@ -4,6 +4,6 @@ I decided to make this open src, I just used Rampage as something to test my web
 
 Btw the website is not mobile friendly and im not sure if im ever gonna implenment it.
 
-You can veiw the website here: http://rampage-menu.com/ if that dosnt work then use https://totallynotluna1.github.io/RampageMenu.github.io/
+You can veiw the website here: http://rampage-menu.com/ Sometimes the domain will stop working for some unknow reason and ill just have to reset it. Its github's way of saying go to hell. 
 
 :)
