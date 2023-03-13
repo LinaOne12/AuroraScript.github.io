@@ -17,7 +17,7 @@ console.log("Updating to the latest website version...")
 for (let i = 0; i < 5; i++) {
   console.count("Waiting...");
 }
-console.log("Updated to website version 1.6")
+console.log("Updated to website version 1.7")
 console.log("Fetching files")
 console.log("Injecting Html files...")
 console.log("Injecting Css files...")
@@ -175,5 +175,6 @@ $(".input_text").focusout(function(){
 
 
 var x = "Is the browser online? " + navigator.onLine;
+
 
 
