@@ -1,0 +1,1027 @@
+<Table>
+<Meta Author="Mabutix v.1.0"/>
+
+//Startseite
+<Translation Original="Player" Replace="Spieler"/>
+<Translation Original="Horse" Replace="Pferd"/>
+<Translation Original="Weapon" Replace="Waffen"/>
+<Translation Original="Vehicle" Replace="Fahrzeug"/>
+<Translation Original="Teleport" Replace="Teleport"/>
+<Translation Original="Spawner" Replace="Spawn"/>
+<Translation Original="World" Replace="Welt"/>
+<Translation Original="Miscellaneous" Replace="Sonstiges"/>
+<Translation Original="Character Stats" Replace="Eigenschaften des Charakters"/>
+<Translation Original="Settings" Replace="Einstellungen"/>
+<Translation Original="HOME" Replace="HOME"/>
+<Translation Original="PLAYER" Replace="SPIELER"/>
+<Translation Original="HORSE" Replace="PFERD"/>
+<Translation Original="WEAPONS" Replace="WAFFEN"/>
+<Translation Original="VEHICLE" Replace="TRANSPORT"/>
+<Translation Original="TELEPORT" Replace="TELEPORT"/>
+<Translation Original="SPAWNER" Replace="Spawn"/>
+<Translation Original="WORLD" Replace="WELT"/>
+<Translation Original="MISCELLANEOUS" Replace="VERSCHIEDENES"/>
+<Translation Original="CHARACTER STATS" Replace="CHARAKTER-STATISTIKEN"/>
+<Translation Original="SETTINGS" Replace="EINSTELLUNGEN"/>
+
+//Spieler
+<Translation Original="SCENARIOS" Replace="SZENARIEN"/>
+<Translation Original="EFFECTS" Replace="EFFEKTE"/>
+<Translation Original="Scenarios" Replace="Skripts"/>
+<Translation Original="Animations" Replace="Animation"/>
+<Translation Original="Wardrobe" Replace="Garderobe"/>
+<Translation Original="Vision" Replace="Vision"/>
+<Translation Original="Effects" Replace="Effekte"/>
+<Translation Original="Emotes" Replace="Emotionen"/>
+<Translation Original="Play Speech" Replace="Sprache wiedergeben"/>
+<Translation Original="Moods" Replace="Gefühle"/>
+<Translation Original="Abilities" Replace="Fertigkeiten"/>
+<Translation Original="Player Proofs" Replace="Spieler Beweise"/>
+<Translation Original="Godmode" Replace="Gott-Modus"/>
+<Translation Original="Auto Heal" Replace="Selbstheilung"/>
+<Translation Original="Ghostmode" Replace="Geistermodus"/>
+<Translation Original="Infinitive Stamina" Replace="Unendliche Ausdauer"/>
+<Translation Original="Never Wanted" Replace="Nie gesucht!"/>
+<Translation Original="End Pursuit" Replace="Das Ende der Verfolgung"/>
+<Translation Original="Everyone Ignore" Replace="Alles ignorieren"/>
+<Translation Original="Infinitive Swim" Replace="Unendliches Schwimmen"/>
+<Translation Original="No Noise" Replace="Keine Geräusche"/>
+<Translation Original="Super Jump" Replace="Super-Sprung"/>
+<Translation Original="Ultra Jump" Replace="Ultra-Sprung"/>
+<Translation Original="Player Scale" Replace="Größe des Spielers"/>
+<Translation Original="No Ragdoll" Replace="Kein Ragdoll"/>
+<Translation Original="Super Run" Replace="Supergeschwindigkeit"/>
+<Translation Original="Passive Run" Replace="Passives Laufen"/>
+<Translation Original="Player Opacity" Replace="Deckkraft des Spielers"/>
+<Translation Original="Quick Skin" Replace="Schnelles Häuten"/>
+<Translation Original="Quick Loot" Replace="Schnelles Looten"/>
+<Translation Original="Fly Mode" Replace="Flugmodusа"/>
+<Translation Original="Collision" Replace="Kollision"/>
+<Translation Original="Forcefield" Replace="Kraftfeld"/>
+<Translation Original="Cores Never Drain" Replace="Die Kerne leeren sich niemals"/>
+<Translation Original="Cores Overpower" Replace="Überschreitung der Kapazität der Kerne"/>
+<Translation Original="Boost Cores" Replace="Kerne beschleunigen"/>
+<Translation Original="Fill Player Cores" Replace="Füllt die Kerne des Spielers wieder auf"/>
+<Translation Original="Heal" Replace="Heilen"/>
+<Translation Original="Clean Ped" Replace="NPCs säubern"/>
+<Translation Original="Set Config Flag" Replace="Konfigurationsflag setzen"/>
+<Translation Original="Clone Player" Replace="Einen Spieler klonen"/>
+<Translation Original="Drink a Beer" Replace="Ein Bier trinken"/>
+<Translation Original="Drink a Whiskey" Replace="Whisky trinken"/>
+<Translation Original="Quick Health Cure" Replace="Eine schnelle Gesundheitskur"/>
+<Translation Original="Get Wanted" Replace="~COLOR_RED~Gesucht werden"/>
+<Translation Original="~COLOR_RED~Instant Death" Replace="~COLOR_RED~Sofortiger Tod"/>
+<Translation Original="~COLOR_RED~Get Wanted" Replace="~COLOR_RED~Gesucht werden"/>
+<Translation Original="~COLOR_RED~Suicide" Replace="~COLOR_RED~Selbstmord"/>
+<Translation Original="Disable Dead Eye" Replace="Deaktiviere Dead Eye"/>
+<Translation Original="Unlimited Dead Eye" Replace="Unbegrenztes Dead Eye"/>
+<Translation Original="Dead Eye Level" Replace="Dead Eye Stufe"/>
+<Translation Original="Disable Eagle Eye" Replace="Deaktiviere Eagle Eye"/>
+<Translation Original="Unlimited Eagle Eye" Replace="Uneingeschränktes Eagle Eye"/>
+<Translation Original="Eagle Eye Plus" Replace="Eagle eye plus"/>
+<Translation Original="Eagle Eye Mode" Replace="Adlerauge-Modus"/>
+<Translation Original="Player Info" Replace="Spieler-Informationen"/>
+<Translation Original="Health" Replace="Gesundheit"/>
+<Translation Original="Movement" Replace="Bewegungsart"/>
+<Translation Original="Wanted Level" Replace="Fahndungsstufe"/>
+<Translation Original="Primary Weapon" Replace="Hauptwaffe"/>
+<Translation Original="Secondary Weapon" Replace="Zusatzwaffen"/>
+<Translation Original="X Coord" Replace="X-Koordinate"/>
+<Translation Original="Y Coord" Replace="Y-Koordinate"/>
+<Translation Original="Z Coord" Replace="Z-Koordinate"/>
+<Translation Original="Location" Replace="Standort"/>
+<Translation Original="Bank" Replace="Bank"/>
+<Translation Original="Speed" Replace="Geschwindigkeit"/>
+<Translation Original="Ammo" Replace="Munition"/>
+<Translation Original="Heading" Replace="Titel"/>
+<Translation Original="Bullets" Replace="Kugeln"/>
+<Translation Original="Flame" Replace="Flamme"/>
+<Translation Original="Explosion" Replace="Explosion"/>
+<Translation Original="Steam" Replace="Dampf"/>
+<Translation Original="Smoke" Replace="Rauch"/>
+<Translation Original="Projectiles" Replace="Projektile"/>
+<Translation Original="Reload List" Replace="Liste neu laden"/>
+<Translation Original="Stop Playing" Replace="Wiedergabe anhalten"/>
+<Translation Original="Stop Playing Immediately" Replace="Sofortige Beendigung der Wiedergabe"/>
+<Translation Original="Use nearest" Replace="Benutze das nächstgelegene"/>
+<Translation Original="Model Changer" Replace="Ändern des Modells"/>
+<Translation Original="Apply Damage Packs" Replace="Schadenspakete anwenden"/>
+<Translation Original="Walk Styles" Replace="Gehstile"/>
+<Translation Original="Facial Hair" Replace="Gesichtsbehaarung"/>
+<Translation Original="Wardrobe Cam" Replace="Garderobe"/>
+<Translation Original="Outfit Variation" Replace="Ausstattungsoptionen"/>
+<Translation Original="Drop Hat" Replace="Haube"/>
+<Translation Original="Remove Off-Hand Holster" Replace="Off-Hand-Holster entfernen"/>
+<Translation Original="Remove Satchel" Replace="Umhängetasche entfernen"/>
+<Translation Original="Never Lose Hat" Replace="Verliere niemals deinen Hut"/>
+<Translation Original="Components" Replace="Komponenten"/>
+<Translation Original="Disable Component" Replace="Komponente deaktivieren"/>
+<Translation Original="Hats" Replace="Hüte"/>
+<Translation Original="Masks" Replace="Masken"/>
+<Translation Original="Head" Replace="Kopf"/>
+<Translation Original="Hair" Replace="Haare"/>
+<Translation Original="Goatees" Replace="Ziegenböcke"/>
+<Translation Original="Sideburns" Replace="Koteletten"/>
+<Translation Original="Mustache" Replace="Schnurrbart"/>
+<Translation Original="Teeth" Replace="Zähne"/>
+<Translation Original="Eyes" Replace="Augen "/>
+<Translation Original="Neckties" Replace="Krawatten"/>
+<Translation Original="Neckwear" Replace="Halstuch"/>
+<Translation Original="Torsos" Replace="Torsos"/>
+<Translation Original="Shirts" Replace="Hemden"/>
+<Translation Original="Vests" Replace="Jacken"/>
+<Translation Original="Coats" Replace="Mantel"/>
+<Translation Original="Cloaks" Replace="Mäntel"/>
+<Translation Original="Suspenders" Replace="Hosenträger"/>
+<Translation Original="Satchels" Replace="Rucksäcke"/>
+<Translation Original="Belts" Replace="Gürtel"/>
+<Translation Original="Gunbelts" Replace="Waffengürtel"/>
+<Translation Original="Loadout" Replace="Entladen"/>
+<Translation Original="Holster" Replace="Halfter"/>
+<Translation Original="Off-Hand Holsters" Replace="Handgelenkholster"/>
+<Translation Original="Gloves" Replace="Handschuhe"/>
+<Translation Original="Legs" Replace="Füße"/>
+<Translation Original="Pants" Replace="Hosen"/>
+<Translation Original="Chaps" Replace="Kappen"/>
+<Translation Original="Boots" Replace="Stiefel"/>
+<Translation Original="Spats" Replace="Gamaschen"/>
+<Translation Original="Spurs" Replace="Sporen"/>
+<Translation Original="Accessories" Replace="Zubehör"/>
+<Translation Original="Badges" Replace="Abzeichen"/>
+<Translation Original="Talisman" Replace="Talisman"/>
+<Translation Original="Auto-Reset" Replace="Automatisch zurücksetzen"/>
+<Translation Original="Enable Bird Controls" Replace="Aktivieren der Vogelkontrolle"/>
+<Translation Original="Enable Attack Controls" Replace="Angriffskontrolle einschalten"/>
+<Translation Original="Enable Reload Controls" Replace="Aktivieren der Wiederanlaufkontrolle"/>
+<Translation Original="~m~Visit Barber and change style after changing" Replace="~m~Besuche einen Friseur und ändere deine Frisur nach dem Wechsel"/>
+<Translation Original="Chin Length" Replace="Kinnlänge"/>
+<Translation Original="Chops Length" Replace="Länge der Koteletts"/>
+<Translation Original="Stache Length" Replace="Länge des Schnurrbartes"/>
+<Translation Original="Hair Length" Replace="Haarlänge"/>
+<Translation Original="Goto Barber" Replace="Gehe zum Friseur"/>
+<Translation Original="Fire Ring" Replace="Feuerring"/>
+<Translation Original="Fire Ring Burst" Replace="Explodierender Ring aus Feuer"/>
+<Translation Original="Fire" Replace="Feuer"/>
+<Translation Original="Sparks" Replace="Funken"/>
+<Translation Original="Sparks Small" Replace="Kleine Funken"/>
+<Translation Original="Tesla Flow" Replace="Strom-Fluss"/>
+<Translation Original="Water Splash" Replace="Ein Spritzer Wasser"/>
+<Translation Original="Player Signal" Replace="Spieler-Signal"/>
+<Translation Original="Net Race Target Destroy" Replace="Zerstörung eines sauberen Rennziels"/>
+<Translation Original="Firework" Replace="Feuerwerk"/>
+<Translation Original="Save current outfit" Replace="Speichern des aktuellen Outfits"/>
+<Translation Original="Remove all before load" Replace="Vor dem Herunterladen alles löschen"/>
+<Translation Original="Save" Replace="Speichern"/>
+<Translation Original="Save Complete Model" Replace="Speicher das vollständige Modell"/>
+<Translation Original="Load Outfit" Replace="Frachtausrüstung"/>
+<Translation Original="No files found" Replace="Dateien nicht gefunden"/>
+<Translation Original="Clear all" Replace="Alles löschen"/>
+<Translation Original="Animpost FX" Replace="Animpost FX"/>
+<Translation Original="Timecycle Modifiers" Replace="Zeitzyklus-Modifikatoren"/>
+<Translation Original="Strength" Replace="Stärke"/>
+<Translation Original="Smoke a Cigar" Replace="Zigarre rauchen"/>
+<Translation Original="Stop Action" Replace="Aktion stoppen"/>
+<Translation Original="Set Voice to Arthur" Replace="Stimme für Arthur anwenden"/>
+<Translation Original="Set Voice to John" Replace="Stimme für John anwenden"/>
+<Translation Original="Set Voice custom" Replace="Einstellen einer benutzerdefinierten Stimme"/>
+<Translation Original="Play Custom" Replace="Zufällige Wiedergabe"/>
+<Translation Original="Toggles" Replace="Schalter"/>
+<Translation Original="Health Recharge" Replace="Gesundheit aufladen"/>
+<Translation Original="Stamina Recharge" Replace="Ausdauer aufladen"/>
+
+//WAFFEN
+<Translation Original="Manage Weapons" Replace="Waffen verwalten"/>
+<Translation Original="Ammo Modifiers" Replace="Modifikatoren für Munition"/>
+<Translation Original="Aimbot" Replace="Automatisches Zielen"/>
+<Translation Original="Visuals" Replace="Visuelle Effekte"/>
+<Translation Original="Modifiers" Replace="Modifikatoren"/>
+<Translation Original="Dual Wield" Replace="Zwei Waffen"/>
+<Translation Original="Always Killcam" Replace="Immer Killcam"/>
+<Translation Original="Weapon Mods" Replace="Waffenmodifikationen"/>
+<Translation Original="Slow Motion on Aiming" Replace="Zeitlupe beim Anvisieren"/>
+<Translation Original="First Person on Aim" Replace="Ich-Perspektive beim zielen"/>
+<Translation Original="Rapid Fire" Replace="Schnellfeuer"/>
+<Translation Original="Rapid Gun" Replace="Schnellfeuerwaffe"/>
+<Translation Original="Auto Cock" Replace="Auto Cock"/>
+<Translation Original="Tenfold Bullets" Replace="Zehnfache Kugeln"/>
+<Translation Original="Explosive Ammo" Replace="Explosive Munition"/>
+<Translation Original="Fire Ammo" Replace="Schusswaffenmunition"/>
+<Translation Original="Infinite Ammo" Replace="Unendlich viel Munition"/>
+<Translation Original="No Reload" Replace="Kein Nachladen"/>
+<Translation Original="One Hit Kill" Replace="Töten mit einem Schuss"/>
+<Translation Original="Super Punch" Replace="Super Schlag"/>
+<Translation Original="Teleport Gun" Replace="Teleportationskanone"/>
+<Translation Original="Lightning Strike Gun" Replace="Ein Gewehr für Blitzschläge"/>
+<Translation Original="Thunder Hawk" Replace="Thunderhawk"/>
+<Translation Original="Gravity Gun" Replace="Schwerkraftpistole"/>
+<Translation Original="Magnet Gun" Replace="Magnetische Waffe"/>
+<Translation Original="Pickup Gun" Replace="Pick-up Pistole"/>
+<Translation Original="Portal Gun" Replace="Portalkanone"/>
+<Translation Original="Perfect Pelt Gun" Replace="Perfekte Felle - Waffe"/>
+<Translation Original="Force Gun" Replace="Power-Waffen"/>
+<Translation Original="Freeze Gun" Replace="Gefrierwaffen"/>
+<Translation Original="Drive it Gun" Replace="Fahrpistole"/>
+<Translation Original="Weapon Laser" Replace="Laserwaffen"/>
+<Translation Original="Debug Gun" Replace="Debugging-Waffen"/>
+<Translation Original="Delete Gun" Replace="Waffe um etwas zu löschen"/>
+<Translation Original="Revive Gun" Replace="Wiederbelebungspistole"/>
+<Translation Original="Disco Lantern" Replace="Disco-Laterne"/>
+<Translation Original="Weapon Locker" Replace="Waffenkammer"/>
+<Translation Original="Give all Weapons" Replace="Erwerb aller Waffen"/>
+<Translation Original="Remove current Weapon" Replace="Die aktuelle Waffe entfernen"/>
+<Translation Original="Drop current Weapon" Replace="Die aktuelle Waffe ablegen"/>
+<Translation Original="Remove all Weapons" Replace="Alle Waffen entfernen"/>
+<Translation Original="Upgrade Weapon" Replace="Modernisierung der Waffen"/>
+<Translation Original="Add Component" Replace="Eine Komponente hinzufügen"/>
+<Translation Original="Fill Ammo" Replace="Die Munition auffüllen"/>
+<Translation Original="Remove All Ammo" Replace="Alle Munition entfernen"/>
+<Translation Original="Apply Dirt" Replace="Schmutz auftragen"/>
+<Translation Original="Auto-Clean Weapon" Replace="Selbstreinigende Waffen"/>
+<Translation Original="Auto-Clean" Replace="Automatische Reinigung"/>
+<Translation Original="Melee" Replace="Nahkampf"/>
+<Translation Original="Revolvers" Replace="Revolver"/>
+<Translation Original="Pistols" Replace="Pistolen"/>
+<Translation Original="Repeaters" Replace="Repeater"/>
+<Translation Original="Rifles" Replace="Gewehre"/>
+<Translation Original="Shotguns" Replace="Schrotflinten"/>
+<Translation Original="Snipers" Replace="Scharfschützen"/>
+<Translation Original="Throwing" Replace="Werfen"/>
+<Translation Original="Explosion Type" Replace="Art der Explosion"/>
+<Translation Original="Bullet Type" Replace="Art der Kugel"/>
+<Translation Original="PTFX Gun" Replace="PTFX-Pistole"/>
+<Translation Original="Size Gun" Replace="Die Größe der Waffe"/>
+<Translation Original="Coords Gun" Replace="Koordinatenpistole"/>
+<Translation Original="Remote Cannonball" Replace="Ferngesteuerte Kanonenkugel"/>
+<Translation Original="Ped Gun" Replace="NPC Pistole"/>
+<Translation Original="Vehicle Gun" Replace="Transportpistole"/>
+<Translation Original="Invisible Weapon" Replace="Unsichtbare Waffen"/>
+<Translation Original="Custom Crosshair" Replace="Benutzerdefiniertes Fadenkreuz"/>
+<Translation Original="Crosshair Color" Replace="Farbe des Fadenkreuzes"/>
+<Translation Original="Clear Dead Eye" Replace="Dead Eye leeren"/>
+<Translation Original="Disable Radial Reticle" Replace="Radiales Fadenkreuz deaktivieren"/>
+<Translation Original="Disable Hitmarker" Replace="Treffermarkierung deaktivieren"/>
+<Translation Original="Disable Hit Feedback" Replace="Schockfeedback deaktivieren"/>
+<Translation Original="Enable" Replace="Einschalten"/>
+<Translation Original="Scale" Replace="Skalieren"/>
+<Translation Original="Damage Modifier" Replace="Schadensmodifikator"/>
+<Translation Original="Melee Modifier" Replace="Nahkampf-Modifikator"/>
+<Translation Original="Defense Modifier" Replace="Verteidigungsmodifikator"/>
+<Translation Original="Accuracy" Replace="Genauigkeit"/>
+<Translation Original="Reset" Replace="Zurücksetzen"/>
+<Translation Original="Enlarge" Replace="Vergrößern"/>
+<Translation Original="Shrink" Replace="Reduzieren"/>
+<Translation Original="Normalize" Replace="Normalisieren"/>
+<Translation Original="Targeting Mode" Replace="Zielsteuerungsmodus"/>
+<Translation Original="Prioritize" Replace="Prioritäten setzen"/>
+<Translation Original="Auto Shoot" Replace="Automatisches Schießen"/>
+<Translation Original="Auto First Person on Aiming." Replace="Automatisch in First Person beim zielen."/>
+<Translation Original="Switch to first person before enabling!" Replace="Vor dem zielen in die Ich-Perspektive wechseln!"/>
+<Translation Original="Use Homing Tomahawk." Replace="Benutze einen Tomahawk, der sich selbst steuert."/>
+<Translation Original="Set two teleport portals." Replace="Zwei Teleporter einrichten."/>
+<Translation Original="Press [Shift] to switch portal creation." Replace="Drücke [Shift], zur Erstellung eines Portals ."/>
+<Translation Original="Freeze aimed Entities." Replace="Anvisierte Dinge einfrieren."/>
+<Translation Original="Press [Shift] while aiming to switch modes." Replace="Drücke [Shift] um beim zielen den Modus zu wechseln."/>
+<Translation Original="Disco Lightning. Does not work with electric lantern." Replace="Disco-Blitz. Funktioniert nicht mit einer elektrischen Taschenlampe."/>
+<Translation Original="Lockon Range" Replace="Lockon-Bereich"/>
+<Translation Original="Alpha" Replace="Alpha"/>
+
+
+
+
+
+//Pferd
+<Translation Original="HORSE ~E~[NOT ON HORSE]" Replace="Pferde ~E~[Nicht auf dem Pferd]"/>
+<Translation Original="HORSE" Replace="Pferde"/>
+<Translation Original="Horse ~e~[Not on Horse]" Replace="Pferde ~e~[Nicht auf dem Pferd]"/>
+<Translation Original="Teleport own horse to me" Replace="Eigenes Pferd zu mir teleportieren"/>
+<Translation Original="Auto Clean" Replace="Automatisches säubern"/>
+<Translation Original="Stats" Replace="Statistik"/>
+<Translation Original="Mobile Stable" Replace="mobiler Stall"/>
+<Translation Original="Load / Save" Replace="Laden / Speichern"/>
+<Translation Original="Blip" Replace="Markierung"/>
+<Translation Original="Invincible" Replace="Unverwundbar"/>
+<Translation Original="Invisible" Replace="Unsichtbar"/>
+<Translation Original="Stamina Never Drain" Replace="Ausdauer versiegt niemals"/>
+<Translation Original="Never Ragdoll" Replace="Nie Ragdoll"/>
+<Translation Original="Horse Scale" Replace="Pferdegröße"/>
+<Translation Original="Super Speed" Replace="Super Geschwindigkeit"/>
+<Translation Original="Speed Modifier" Replace="Geschwindigkeitsmodifikator"/>
+<Translation Original="Horse Fly Mode" Replace="Pferde Flugmodus"/>
+<Translation Original="Horse Always Calm" Replace="Pferd ist immer ruhig"/>
+<Translation Original="Flaming Hooves" Replace="Flammende Hufe"/>
+<Translation Original="Fill Horse Cores" Replace="Füllt die Kerne des Pferdes auf"/>
+<Translation Original="Quick Boost" Replace="Schneller Boost"/>
+<Translation Original="Quick Stop" Replace="Schneller Stopp"/>
+<Translation Original="Clean" Replace="Sauber"/>
+<Translation Original="Always Clean" Replace="Immer sauber"/>
+<Translation Original="Clone" Replace="Clonen"/>
+<Translation Original="Rename" Replace="Umbenennen"/>
+<Translation Original="Set as Saddle Horse" Replace="Als Sattelpferd eingestellt"/>
+<Translation Original="~COLOR_RED~Kill" Replace="~COLOR_RED~Töten"/>
+<Translation Original="~COLOR_RED~Delete" Replace="~COLOR_RED~Löschen"/>
+<Translation Original="HORSE SPAWNER" Replace="Pferde Spwanen"/>
+<Translation Original="Gender" Replace="Geschlecht"/>
+<Translation Original="Male" Replace="Männlich"/>
+<Translation Original="Female" Replace="Weiblich"/>
+<Translation Original="Max Horse Cores" Replace="Maximale Pferdekerne"/>
+<Translation Original="Max Horse Bonding" Replace="Max Pferdebindung"/>
+<Translation Original="Custom" Replace="Benutzerdefiniert"/>
+<Translation Original="Health Core" Replace="Gesundheitskern"/>
+<Translation Original="Stamina Core" Replace="Ausdauerkern"/>
+<Translation Original="Handling Level" Replace="Handhabungs Level"/>
+<Translation Original="Speed Level" Replace="Geschwindigkeits Level"/>
+<Translation Original="Acceleration Level" Replace="Beschleunigungs Stufe"/>
+<Translation Original="Bonding Level" Replace="Bindungslevel"/>
+<Translation Original="Weight" Replace="Gewicht"/>
+<Translation Original="Teleport to Me" Replace="Teleportiere das Pferd zu mir"/>
+<Translation Original="Teleport to Horse" Replace="Zum Pferd Teleportieren"/>
+<Translation Original="Revive Horse" Replace="Pferd wiederbeleben"/>
+<Translation Original="Add Blip" Replace="Markierung hinzufügen"/>
+<Translation Original="Teleport to blip horse" Replace="Zur Pferdemarkierung teleportieren"/>
+<Translation Original="Teleport blip horse to you" Replace="Markiertes Pferd zu mir teleportieren"/>
+<Translation Original="Random Components" Replace="Zufällige Komponenten"/>
+<Translation Original="Remove all Components" Replace="Entfernen Sie alle Komponenten"/>
+<Translation Original="Saddle" Replace="Sattel"/>
+<Translation Original="Saddle-Clothes" Replace="Sattelkleidung"/>
+<Translation Original="Horns" Replace="Hörner"/>
+<Translation Original="Stirrups" Replace="Steigbügel"/>
+<Translation Original="Bags" Replace="Taschen"/>
+<Translation Original="Luggage" Replace="Gepäck"/>
+<Translation Original="Mane" Replace="Mähne"/>
+<Translation Original="Tail" Replace="Schwanz"/>
+<Translation Original="Horse Info" Replace="Pferde Info"/>
+<Translation Original="Max Stamina" Replace="Maximale Ausdauer"/>
+<Translation Original="Handling" Replace="Handhabung"/>
+<Translation Original="Top Speed" Replace="Top Geschwindigkeit"/>
+<Translation Original="Acceleration" Replace="Beschleunigung"/>
+
+//Teleport
+<Translation Original="Teleport to Waypoint" Replace="Teleport zu einem Wegpunkt"/>
+<Translation Original="Auto Teleport to Waypoint" Replace="Automatischer Teleport zu einem Wegpunkt"/>
+<Translation Original="Remove Waypoint" Replace="Wegpunkt löschen"/>
+<Translation Original="Teleport Animation" Replace="Animation der Teleportation"/>
+<Translation Original="Custom Locations" Replace="Benutzerdefinierte Standorte"/>
+<Translation Original="Save current location" Replace="Aktuellen Standort speichern"/>
+<Translation Original="Custom coords" Replace="Benutzer-Koordinaten"/>
+<Translation Original="Load custom location" Replace="Benutzerstandort laden"/>
+<Translation Original="Locations" Replace="Standort"/>
+<Translation Original="Camps and Safehouses" Replace="Camps und Unterschlüpfe"/>
+<Translation Original="Shops and Co." Replace="Geschäfte und Co."/>
+<Translation Original="Mid-Eastern Locations" Replace="Mittelöstliche Standorte"/>
+<Translation Original="Saint Denis Locations" Replace="Saint Denis Standorte"/>
+<Translation Original="North East Locations" Replace="Standorte im Nordosten"/>
+<Translation Original="Northern Locations" Replace="Nördliche Standorte"/>
+<Translation Original="North West Locations" Replace="Standorte im Nordwesten"/>
+<Translation Original="South West Locations" Replace="Standorte im Südwesten"/>
+<Translation Original="Off-land Locations" Replace="Off-land Standorte"/>
+<Translation Original="Unfinished Locations" Replace="Unfertige Standorte"/>
+<Translation Original="Special Locations" Replace="Besondere Orte"/>
+<Translation Original="Directional" Replace="Ausgerichtet"/>
+<Translation Original="Forward" Replace="Vorwärts"/>
+<Translation Original="Backward" Replace="Rückwärts"/>
+<Translation Original="Vehicle / Horse" Replace="Transport / Pferd"/>
+<Translation Original="Last Vehicle" Replace="Der letzte Transport"/>
+<Translation Original="Last Horse" Replace="Das letzte Pferd"/>
+<Translation Original="Nearest Vehicle" Replace="Nächstgelegener Transport"/>
+<Translation Original="Nearest Train Track" Replace="Nächstgelegene Bahnstrecke"/>
+<Translation Original="Common Locations" Replace="Gemeinsame Standorte"/>
+<Translation Original="Shops" Replace="Geschäfte"/>
+<Translation Original="Gunsmiths" Replace="Waffenhändler"/>
+<Translation Original="Doctors" Replace="Ärzte"/>
+<Translation Original="Theaters" Replace="Theater"/>
+<Translation Original="Barbers" Replace="Friseure"/>
+<Translation Original="Photo studios" Replace="Fotostudios"/>
+<Translation Original="Hotels" Replace="Hotels"/>
+<Translation Original="Fences" Replace="Zäune"/>
+<Translation Original="Post stations" Replace="Postämter"/>
+<Translation Original="Tailors" Replace="Schneider"/>
+<Translation Original="Butchers" Replace="Metzger"/>
+<Translation Original="Stable" Replace="Stall"/>
+<Translation Original="Saloons" Replace="Salons"/>
+<Translation Original="Trappers" Replace="Trapper"/>
+<Translation Original="Show on Map" Replace="Auf der Karte anzeigen"/>
+<Translation Original="Off" Replace="Aus"/>
+
+
+//Freischalten von
+<Translation Original="Unlock Checks" Replace="Entsperren der Checks"/>
+<Translation Original="American Dialogue Receptive" Replace="Verständnis für den amerikanischen Dialog"/>
+<Translation Original="American Dialogue Trusted" Replace="Ein vertrauter amerikanischer Dialog"/>
+<Translation Original="Arthurs Grave Scene" Replace="Artus' Begräbnisszene"/>
+<Translation Original="Bandit Challenges" Replace="Banditenversuche"/>
+<Translation Original="Compendium" Replace="Kompendium"/>
+<Translation Original="Content Special Edition" Replace="Inhalt der Sonderausgabe"/>
+<Translation Original="Content Pre-Order Digital" Replace="Vorbestellung digitaler Inhalte"/>
+<Translation Original="Content Pre-Order Items Redeeme" Replace="Einlösung von Gegenständen für vorbestellte Inhalte"/>
+<Translation Original="Content Pre-Order" Replace="Inhalt Vorbestellung"/>
+<Translation Original="Cross Promotion Hatchet" Replace="Eine werbeübergreifende Axt"/>
+<Translation Original="Cross Promotion Revolver" Replace="Cross-Promotion-Revolver"/>
+<Translation Original="Dualwield Weapon" Replace="Doppelläufige Waffen"/>
+<Translation Original="Edition Special Redeeme" Replace="Sonderausgabe erschienen"/>
+<Translation Original="Endless Summer Weapons" Replace="Endloswaffen für den Sommer"/>
+<Translation Original="Endless Summer" Replace="Endloser Sommer"/>
+<Translation Original="Explorer Challenges" Replace="Die Aufgaben des Forschers"/>
+<Translation Original="Explosive Ammo Shotgun" Replace="Schrotflinte mit Explosivmunition"/>
+<Translation Original="Gambler Challenges" Replace="Herausforderungen für Glücksspieler"/>
+<Translation Original="Guarma Appearance Active" Replace="Guarmas Aussehen ist aktiv"/>
+<Translation Original="Herbalist Challenges" Replace="Die Aufgaben eines Kräutersammlers"/>
+<Translation Original="Horseman Challenges" Replace="Die Aufgaben des Reiters"/>
+<Translation Original="Hunting Challenges" Replace="Die Aufgaben des Jägers"/>
+<Translation Original="Mud3 Killed Witness" Replace="Mud3 hat einen Zeugen getötet"/>
+<Translation Original="Orbis Day One Redeeme" Replace="Orbis Tag Eins Einlösung"/>
+<Translation Original="Orbis Day One" Replace="Orbis Tag eins"/>
+<Translation Original="Peds React to Sick Arthur" Replace="Fußgänger reagieren auf den kranken Arthur"/>
+<Translation Original="Post Gang 1" Replace="Postgang 1"/>
+<Translation Original="RDCH3 Dynamite" Replace="RDCH3 Dynamit"/>
+<Translation Original="SP Achievments" Replace="SP Errungenschaften"/>
+<Translation Original="Sharpshooter Challenges" Replace="Scharfschützenversuche"/>
+<Translation Original="Survivalist Challenges" Replace="Ein Test des Überlebens"/>
+<Translation Original="Weapon Challenges" Replace="Prüfungen mit Waffen"/>
+<Translation Original="Weapons" Replace="Waffen"/>
+<Translation Original="Unlock all Weapons" Replace="Schalte alle Arten von Waffen frei"/>
+<Translation Original="Discover Herbs" Replace="Entdecken aller Kräuter"/>
+<Translation Original="Discover Horses" Replace="Entdecke alle Pferde"/>
+<Translation Original="Discover Animals" Replace="Entdecken aller Tiere"/>
+<Translation Original="Discover Fish" Replace="Entdecke den Fisch"/>
+<Translation Original="Discover Fishes" Replace="Entdecke alle Fische"/>
+<Translation Original="Discover Gangs" Replace="Entdecke alle Gangs"/>
+
+//Sonstiges
+<Translation Original="CORE" Replace="Kerne"/>
+<Translation Original="HONOR" Replace="EHRE"/>
+<Translation Original="LOOT" Replace="LOOT"/>
+<Translation Original="Misc" Replace="Sonstiges"/>
+<Translation Original="Cash" Replace="Geld"/>
+<Translation Original="Honor" Replace="Ehre"/>
+<Translation Original="Bounty" Replace="Kopfgeld"/>
+<Translation Original="Unlocks" Replace="Freischalten"/>
+<Translation Original="Collectibles" Replace="Sammlerstücke"/>
+<Translation Original="Core" Replace="Kerne"/>
+<Translation Original="Deaths" Replace="Tode"/>
+<Translation Original="Kills" Replace="Morde"/>
+<Translation Original="Shots" Replace="Schüsse"/>
+<Translation Original="Drop Ammo" Replace="Munition fallen lassen"/>
+<Translation Original="Give Items" Replace="Gegenstaende geben"/>
+<Translation Original="Reveal Map" Replace="Karte offenlegen"/>
+<Translation Original="Set Weight" Replace="Gewicht einstellen"/>
+<Translation Original="Reset Journal" Replace="Protokoll zurücksetzen"/>
+<Translation Original="Player Stats" Replace="Statistik"/>
+<Translation Original="Headshots" Replace="Kopfschüsse"/>
+<Translation Original="Completed Missions" Replace="Abgeschlossene Missionen"/>
+<Translation Original="Crafted Items" Replace="Hergestellte Gegenstände"/>
+<Translation Original="Looted Peds" Replace="Geplünderte NPCs"/>
+<Translation Original="Times Cheated" Replace="Anzahl der Cheats"/>
+<Translation Original="Total Bounty" Replace="Gesamtes Kopfgeld"/>
+<Translation Original="Cash Earned" Replace="Verdientes Geld"/>
+<Translation Original="Cash Spend" Replace="Finanzielle Ausgaben"/>
+<Translation Original="Playing Time" Replace="Spielzeit"/>
+<Translation Original="Completion" Replace="Fertigstellung"/>
+<Translation Original="Add Cash" Replace="Bargeld hinzufügen"/>
+<Translation Original="Remove Cash" Replace="Bargeld löschen"/>
+<Translation Original="Drop Cash" Replace="Bargeld geben"/>
+<Translation Original="Amount" Replace="Betrag"/>
+<Translation Original="Model" Replace="Modell"/>
+<Translation Original="Cash Bag Drop" Replace="Geldbeutel"/>
+<Translation Original="Money Gun" Replace="Geldpistole"/>
+<Translation Original="Total Money Dropped " Replace="Gesamtbetrag des erhaltenen Geldes "/>
+<Translation Original="Misc Drop" Replace="Sonstiges fallen lassen"/>
+<Translation Original="Rain Weapons" Replace="Waffenregen"/>
+<Translation Original="Spawn Goodie Chest" Replace="Spawn Geschenketruhe"/>
+<Translation Original="Spawn Med Chest" Replace="Spawn einer Arztkiste"/>
+<Translation Original="Spawn Cash Chest" Replace="Spawn einer Geldtruhe"/>
+<Translation Original="Unlimited Items" Replace="Unbegrenzte Anzahl von Artikeln"/>
+<Translation Original="Max Items" Replace="Maximale Artikel"/>
+<Translation Original="Custom Input (StringHash)" Replace="Benutzereingabe (Hash-String)"/>
+<Translation Original="Current Honor" Replace="Aktuelle Ehre"/>
+<Translation Original="Set Honor" Replace="Ehre festlegen"/>
+<Translation Original="Add Honor" Replace="Ehre hinzufügen"/>
+<Translation Original="Remove Honor" Replace="Entfernen der Ehre"/>
+<Translation Original="Add Positive" Replace="Positives hinzufügen"/>
+<Translation Original="Add Negative" Replace="Negatives hinzufügen"/>
+
+//Einstellungen
+<Translation Original="Premade Themes" Replace="VORGEFERTIGTE THEMEN"/>
+<Translation Original="Registered Hotkeys" Replace="Registrierte Hotkeys"/>
+<Translation Original="HOTKEY MANAGER" Replace="HOTKEY MANAGER"/>
+<Translation Original="WINDOW MANAGER" Replace="WINDOW MANAGER"/>
+<Translation Original="EXTENDED UI" Replace="ERWEITERTES INTERFACE"/>
+<Translation Original="THEME" Replace="THEMEN"/>
+<Translation Original="SETTINGS" Replace="EINSTELLUNGEN"/>
+<Translation Original="Search" Replace="Suche"/>
+<Translation Original="Core" Replace="Hauptseite"/>
+<Translation Original="Window Manager" Replace="Fensterverwaltung"/>
+<Translation Original="Extended UI" Replace="Erweitertes Interface"/>
+<Translation Original="Theme" Replace="Themen"/>
+<Translation Original="Plugins" Replace="Plugins"/>
+<Translation Original="Language" Replace="Sprachen"/>
+<Translation Original="Hotkey Manager" Replace="Hotkey Manager"/>
+<Translation Original="Navigation Delay" Replace="Navigation Verzoegerung"/>
+<Translation Original="Value Delay" Replace="Wertverzoegerung"/>
+<Translation Original="Search for an Option" Replace="Die Suche nach der richtigen Option"/>
+<Translation Original="Debug" Replace="Debuggen"/>
+<Translation Original="Mouse controls" Replace="Maussteuerung"/>
+<Translation Original="Controller controls" Replace="Controller-Steuerung"/>
+<Translation Original="Menu Sounds" Replace="Menü-Töne"/>
+<Translation Original="Check for Updates" Replace="Nach Aktualisierungen suchen"/>
+<Translation Original="Emergency Reset" Replace="Notfall-Rücksetzung"/>
+<Translation Original="Landing Page" Replace="~COLOR_RED~Zielseite"/>
+<Translation Original="Open Log" Replace="Öffne das Protokoll"/>
+<Translation Original="Open Sysinfo" Replace="Informationen zum offenen System"/>
+<Translation Original="Open Performance" Replace="Produktivität entdecken"/>
+<Translation Original="Open Hotkeys" Replace="Öffnen der Tastaturkürzel"/>
+<Translation Original="Close all" Replace="Alle schließen"/>
+<Translation Original="Reset Windows" Replace="Zurücksetzen der Fenstereinstellungen"/>
+<Translation Original="Open Info" Replace="Mehr Informationen erhalten"/>
+<Translation Original="Window Activators" Replace="Fensteraktivierungen"/>
+<Translation Original="Teleport map" Replace="Teleportkarte"/>
+<Translation Original="Spawner Previews" Replace="Spawner-Vorschau"/>
+<Translation Original="Invert Colors" Replace="Farben invertieren"/>
+<Translation Original="Smooth Scrolling" Replace="Sanfter Bildlauf"/>
+<Translation Original="Scroll Anim Speed" Replace="Geschwindigkeit der Bildlaufanimation"/>
+<Translation Original="Cursor Hotkey" Replace="Cursor-Hotkey"/>
+<Translation Original="Cursor Key" Replace="Cursor-Taste"/>
+<Translation Original="Teleport Hotkey" Replace="Teleport-Hotkey"/>
+<Translation Original="Teleport Key" Replace="Teleportations-Taste"/>
+<Translation Original="Creator Hotkey" Replace="Ersteller-Hotkey"/>
+<Translation Original="Cmd Hotkey" Replace="Cmd Schnelltaste"/>
+<Translation Original="Cmd Key" Replace="Cmd Taste"/>
+<Translation Original="Save Hotkey Config" Replace="Speichern der Hotkey-Konfiguration"/>
+<Translation Original="Load Hotkey Config" Replace="Herunterladen der Hotkey-Konfiguration"/>
+<Translation Original="Open Key" Replace="Öffnen mit der Taste"/>
+<Translation Original="Gamepad Open Key" Replace="Taste Gamepad öffnen"/>
+<Translation Original="Premade themes" Replace="Vorgefertigte Themen"/>
+<Translation Original="Save current settings" Replace="Speichern der aktuellen Einstellungen"/>
+<Translation Original="Load settings from file" Replace="Einstellungen aus Datei laden"/>
+<Translation Original="Sync Toggle Config" Replace="Konfiguration der Synchronisationsschaltung"/>
+<Translation Original="Premade themes" Replace="Vorgefertigte Themen"/>
+<Translation Original="Customize" Replace="Anpassen"/>
+<Translation Original="Main Font" Replace="Grundschriftart"/>
+<Translation Original="Body Font" Replace="Schriftart"/>
+<Translation Original="Enable Header" Replace="Kopfzeile einfügen"/>
+<Translation Original="Style" Replace="Stil"/>
+<Translation Original="Primary" Replace="Hauptseite"/>
+<Translation Original="Title Text" Replace="Text des Titels"/>
+<Translation Original="Header Color" Replace="Farbe der Überschrift"/>
+<Translation Original="Scroller Color" Replace="Farbe der Bildlaufleiste"/>
+<Translation Original="RGB Mode" Replace="RGB-Modus"/>
+<Translation Original="Menu" Replace="Menu"/>
+<Translation Original="Animated" Replace="Animiert"/>
+<Translation Original="Menu X axis" Replace="Menü X-Achse"/>
+<Translation Original="Menu Y axis" Replace="Menü Y-Achse"/>
+<Translation Original="Restore" Replace="Wiederherstellen"/>
+<Translation Original="Load optimal defaults" Replace="Standardwerte laden"/>
+
+//Spawn
+<Translation Original="VEHICLE SPAWNER" Replace="FAHRZEUG-SPAWNEN"/>
+<Translation Original="Vehicles" Replace="FAHRZEUGE"/>
+<Translation Original="Peds" Replace="NPCs"/>
+<Translation Original="Objects" Replace="Objekte"/>
+<Translation Original="Plants" Replace="Pflanzen"/>
+<Translation Original="Spawned Entities" Replace="Objekte erzeugen"/>
+<Translation Original="Spawner Settings" Replace="Spawn Einstellungen"/>
+<Translation Original="Custom Input" Replace="Benutzereingabe"/>
+<Translation Original="Train Spawner" Replace="Zug spawner"/>
+<Translation Original="Wagon Spawner" Replace="Wagong spawner"/>
+<Translation Original="Boat Spawner" Replace="Boot spawner"/>
+<Translation Original="Cannon Spawner" Replace="Kanonen spawner"/>
+<Translation Original="Extra" Replace="Ergaenzung."/>
+<Translation Original="Hot Air Balloon" Replace="Heißluftballon"/>
+<Translation Original="Spawn in vehicle" Replace="Im Verkehr spawnen"/>
+<Translation Original="Delete old vehicle" Replace="Altes Transportmittel löschen"/>
+<Translation Original="Ped Database" Replace="NPC-Datenbank"/>
+<Translation Original="Humans" Replace="Menschen"/>
+<Translation Original="Horses" Replace="Pferde"/>
+<Translation Original="Animals" Replace="Tiere"/>
+<Translation Original="Search Peds" Replace="Suche nach NPCs"/>
+<Translation Original="Spawn on Horse" Replace="Spawn auf Pferd"/>
+<Translation Original="Spawn Dead" Replace="Einen Toten Spawnen"/>
+<Translation Original="Spawn Sedated" Replace="Sedierten spawnen"/>
+<Translation Original="Spawn as Bodyguard" Replace="Als Leibwächter spawnen"/>
+<Translation Original="Spawn in Posse" Replace="Spawn in der Gruppe"/>
+<Translation Original="Spawn Frozen" Replace="Spawn Frozen"/>
+<Translation Original="Spawn Interactable" Replace="Spawn Interaktionsfähig"/>
+<Translation Original="Bypass Relationship" Replace="Überbrückte Beziehungen"/>
+<Translation Original="Values" Replace="Werte"/>
+<Translation Original="Ambient Female" Replace="Umgebung weiblich"/>
+<Translation Original="Ambient Female Ordinary" Replace="Umgebung weiblich gewöhnlich"/>
+<Translation Original="Ambient Male" Replace="Umgebung männlich"/>
+<Translation Original="Ambient Male Ordinary" Replace="Umgebung männlich gewöhnlich"/>
+<Translation Original="Ambient Male Suppressed" Replace="Umgebung Männlich Unterdrückt"/>
+<Translation Original="Cutscene" Replace="Zwischensequenz"/>
+<Translation Original="Mupliplayer Cutscene" Replace="Mupliplayer Zwischensequenz"/>
+<Translation Original="Gang" Replace="Gang"/>
+<Translation Original="Story Finale" Replace="Letzte Geschichte"/>
+<Translation Original="Story" Replace="Geschichte"/>
+<Translation Original="Random Event" Replace="Zufälliges Ereignis"/>
+<Translation Original="Scenario" Replace="Szenario"/>
+<Translation Original="Story Scenario Female" Replace="Story-Szenario weiblich"/>
+<Translation Original="Story Scenario Male" Replace="Story-Szenario männlich"/>
+<Translation Original="Posse" Replace="Gruppe"/>
+<Translation Original="Clear Database" Replace="Datenbank löschen"/>
+<Translation Original="Delete all" Replace="Alles löschen"/>
+<Translation Original="Formation" Replace="Formation"/>
+<Translation Original="Posse Commands" Replace="Gruppen-Befehle"/>
+<Translation Original="Dismiss Posse" Replace="Trupp entlassen"/>
+<Translation Original="1 Posse Attack aimed target" Replace="~m~1 Gruppe greift das anvisierte Ziel an"/>
+<Translation Original="2 Closest Member Attack aimed target" Replace="~m~2 das naheste Mitglied greift den aniviserten Feind an"/>
+<Translation Original="3 Closest Member Lasso aimed target" Replace="~m~3 das nahste Mitglied fängt den Gegner mit einem Lasso"/>
+<Translation Original="4 All Members keep their position" Replace="~m~4 Alle Mitglieder bleiben auf ihren Positionen"/>
+<Translation Original="5 All Members will come to you" Replace="~m~5 Alle Mitglieder kommen zu dir"/>
+<Translation Original="Cam Settings" Replace="Kamera Einstellungen"/>
+<Translation Original="Creator Cam" Replace="Ersteller Kamera"/>
+<Translation Original="Object Database" Replace="Objekt-Datenbank"/>
+<Translation Original="All Objects" Replace="Alle Objekte"/>
+<Translation Original="Search Objects" Replace="Objektsuche"/>
+
+//Artikel
+<Translation Original="Apple" Replace="Apfel"/>
+<Translation Original="Baked Beans" Replace="Dosenbohnen"/>
+<Translation Original="Bread Roll" Replace="Brot"/>
+<Translation Original="Candy" Replace="Süßigkeiten"/>
+<Translation Original="Canned Apricots" Replace="Dosenpfirsiche"/>
+<Translation Original="Canned Corn" Replace="Dosenmais"/>
+<Translation Original="Canned Salmon" Replace="Dosenlachs"/>
+<Translation Original="Cheese" Replace="Käse"/>
+<Translation Original="Chewing Tobaco" Replace="Kautabak"/>
+<Translation Original="Chocolate" Replace="Schokolade"/>
+<Translation Original="Cigarettes" Replace="Zigaretten"/>
+<Translation Original="Coffee" Replace="Kaffee"/>
+<Translation Original="Assorted Biscuits" Replace="Verschiedene Kekse"/>
+<Translation Original="Corn" Replace="Mais"/>
+<Translation Original="Cracker" Replace="Kekse"/>
+<Translation Original="Fine Brandy" Replace="Brandy"/>
+<Translation Original="Gin" Replace="Gin"/>
+<Translation Original="Guarma Rum" Replace="Rum"/>
+<Translation Original="Hair Tonic" Replace="Haartonikum"/>
+<Translation Original="Health Cure" Replace="Medizin"/>
+<Translation Original="Kentucky Bourbon" Replace="Bourbon"/>
+<Translation Original="Miracle Tonic" Replace="Tonic"/>
+<Translation Original="Moonshine" Replace="Moonshine"/>
+<Translation Original="Pomade" Replace="Pomade"/>
+<Translation Original="Salted Beef" Replace="Gesalzenes Rindfleisch"/>
+<Translation Original="Salted Wild Beef" Replace="Gesalzenes Wildrindfleisch"/>
+<Translation Original="Snake Oil" Replace="Schlangenöl"/>
+<Translation Original="Cash Clip" Replace="Geldklammer"/>
+<Translation Original="Cash Stack" Replace="Geldstapel"/>
+<Translation Original="Gold Bar" Replace="Goldbarren"/>
+
+//Die Welt
+<Translation Original="Time" Replace="Zeit"/>
+<Translation Original="Weather" Replace="Wetter"/>
+<Translation Original="Water" Replace="Wasser"/>
+<Translation Original="Cloud Editor" Replace="Wolken-Editor"/>
+<Translation Original="Ped Manager" Replace="NPC-Manager"/>
+<Translation Original="Vehicle Manager" Replace="Transport Manager"/>
+<Translation Original="Object Manager" Replace="Objektmanager"/>
+<Translation Original="Tornado & Black Hole" Replace="Tornado & Schwarzes Loch"/>
+<Translation Original="IPL Loader" Replace="IPL-Lader"/>
+<Translation Original="Disable Interior Lightning" Replace="Die Innenbeleuchtung ausschalten"/>
+<Translation Original="Firework Mode" Replace="Feuerwerk-Modus"/>
+<Translation Original="Giant Mode" Replace="Riesen-Modus"/>
+<Translation Original="No Gravity" Replace="Keine Schwerkraft"/>
+<Translation Original="Decrease Ped Population" Replace="Verringerung der Anzahl von NPCsв"/>
+<Translation Original="Decrease Vehicle Population" Replace="Verringerdie Anzahl der Fahrzeuge"/>
+<Translation Original="Delete All Trains" Replace="Alle Züge löschen"/>
+<Translation Original="Delete All Pickups" Replace="Alle Markierungen löschen"/>
+<Translation Original="Area Scale" Replace="Größe des Gebiets"/>
+<Translation Original="Clear Area" Replace="Räumt das Gebiet"/>
+<Translation Original="Cleanup Area" Replace="Reinigungszone"/>
+<Translation Original="Quick Camp" Replace="Schnelles Campen"/>
+<Translation Original="Teleport to Me" Replace="Teleport zu mir"/>
+<Translation Original="Jump" Replace="Springen"/>
+<Translation Original="Run to Me" Replace="Lauf zu mir"/>
+<Translation Original="Hands Up" Replace="Hände hoch"/>
+<Translation Original="Cower" Replace="Schrumpfen"/>
+<Translation Original="Explode" Replace="Explodieren"/>
+<Translation Original="Kill" Replace="Töten"/>
+<Translation Original="Kill Enemies" Replace="Die Feinde töten"/>
+<Translation Original="Explode Enemies" Replace="Feinde in die Luft jagen"/>
+<Translation Original="Recruit as Bodyguards" Replace="als Leibwächter anheuern"/>
+<Translation Original="Recruit pool as Bodyguards" Replace="Die Gruppe als Leibwächter rekrutieren"/>
+<Translation Original="Add pool to Posse" Replace="Pool zur Posse hinzufügen"/>
+<Translation Original="Hostile Peds" Replace="Feindselige NPCS"/>
+<Translation Original="Ped Scanner" Replace="NPC Scanner"/>
+<Translation Original="Delete All" Replace="Alle löschen"/>
+<Translation Original="Reset Weather" Replace="Das Wetter zurücksetzen"/>
+<Translation Original="Freeze" Replace="Einfrieren"/>
+<Translation Original="Randomize" Replace="Zufällig"/>
+<Translation Original="Random Thunderbolt" Replace="Unbeabsichtigter Blitzschlag"/>
+<Translation Original="Windy" Replace="Windig"/>
+<Translation Original="Sunny" Replace="Sonnig"/>
+<Translation Original="Misty" Replace="Neblig"/>
+<Translation Original="Fog" Replace="Nebel"/>
+<Translation Original="Clouds" Replace="Wolken"/>
+<Translation Original="Overcast" Replace="Bedeckt"/>
+<Translation Original="Overcast Dark" Replace="Bedeckte Dunkelheit"/>
+<Translation Original="Drizzle" Replace="Frieren"/>
+<Translation Original="Rain" Replace="Regen"/>
+<Translation Original="Thunder" Replace="Donner"/>
+<Translation Original="Thunderstorm" Replace="Gewittersturm"/>
+<Translation Original="Hurricane" Replace="Wirbelsturm"/>
+<Translation Original="Shower" Replace="Regenschauer"/>
+<Translation Original="Hail" Replace="Grad"/>
+<Translation Original="Sleet" Replace="Schneematsch"/>
+<Translation Original="Snow Clearing" Replace="Schneeräumung"/>
+<Translation Original="Snow" Replace="Schnee"/>
+<Translation Original="Blizzard" Replace="Schneesturm"/>
+<Translation Original="Ground Blizzard" Replace="Ein Schneesturm am Boden"/>
+<Translation Original="Whiteout" Replace="Weißer Nebel"/>
+<Translation Original="Sandstorm" Replace="Sandsturm"/>
+<Translation Original="Wind Speed" Replace="Windgeschwindigkeit"/>
+<Translation Original="Rain Level" Replace="Stärke des Regens"/>
+<Translation Original="Snow Level" Replace="Höhe des Schnees"/>
+<Translation Original="Guarma Horizon" Replace="Guarma-Horizont"/>
+<Translation Original="Halloween Override" Replace="Die Neudefinition von Halloween"/>
+<Translation Original="Snow Mode" Replace="Schnee-Modus"/>
+<Translation Original="Coverage Type" Replace="Art der Beschichtung"/>
+<Translation Original="Environment" Replace="Umgebung"/>
+<Translation Original="Prediction" Replace="Vorhersage"/>
+<Translation Original="Temperature" Replace="Temperatur"/>
+<Translation Original="Wind" Replace="Wind"/>
+<Translation Original="Hour" Replace="Stunde"/>
+<Translation Original="Minute" Replace="Minute"/>
+<Translation Original="Second" Replace="Sekunde"/>
+<Translation Original="Day" Replace="Tag"/>
+<Translation Original="Month" Replace="Monat"/>
+<Translation Original="Year" Replace="Jahr"/>
+<Translation Original="Milliseconds per Game Minute" Replace="Millisekunden pro Spielminute"/>
+<Translation Original="Force Milliseconds per Game Minute" Replace="Leistung Millisekunden pro Spielminute"/>
+<Translation Original="Stop Time" Replace="Zeit anhalten"/>
+<Translation Original="Time Cycle" Replace="Zeitzyklus"/>
+<Translation Original="Set Time" Replace="Zeit einstellen"/>
+<Translation Original="Sunrise" Replace="Sonnenaufgang"/>
+<Translation Original="Midday" Replace="Mittags"/>
+<Translation Original="Sunset" Replace="Sonnenuntergang"/>
+<Translation Original="Midnight" Replace="Mitternacht"/>
+<Translation Original="Sync System Time" Replace="Synchronisierung der Systemzeit"/>
+<Translation Original="Timelapse" Replace="Zeitraffer"/>
+<Translation Original="Timelapse mode" Replace="Zeitraffer-Modus"/>
+<Translation Original="Timelapse Toggle" Replace="Zeitraffer schalten"/>
+<Translation Original="Guarma Water" Replace="Guarma-Wasser"/>
+<Translation Original="Guarma water and hurricane weather needed." Replace="Benötigt Wasser für Guarma und Hurrikan-Wetter."/>
+<Translation Original="Guarma Hurricane Water" Replace="Hurricane Wasser Guarma"/>
+<Translation Original="Walk Underwater" Replace="Unterwasser gehen"/>
+<Translation Original="All Water" Replace="Alles Wasser"/>
+<Translation Original="Ocean" Replace="Ozean"/>
+<Translation Original="Disable Ocean" Replace="Den Ozean ausschalten"/>
+<Translation Original="Clear Ocean" Replace="Ein klarer Ozean"/>
+<Translation Original="Disable" Replace="Deaktivieren"/>
+<Translation Original="Clear" Replace="Löschen"/>
+<Translation Original="Remove ocean density." Replace="Entfernen Sie die Dichte des Ozeans."/>
+<Translation Original="Remove all water." Replace="Alles Wasser entfernen."/>
+<Translation Original="Remove Clouds" Replace="Wolken entfernen"/>
+<Translation Original="Layer" Replace="Ebene"/>
+<Translation Original="Noise" Replace="Lärm"/>
+<Translation Original="Position" Replace="Position"/>
+<Translation Original="Override" Replace="Überschreiben"/>
+<Translation Original="Height" Replace="Höhe"/>
+<Translation Original="Cloudlapse" Replace="Cloud-Verzögerung"/>
+<Translation Original="Toggle" Replace="Umschalten"/>
+<Translation Original="Boost Forward" Replace="Vorwärtsbeschleunigung"/>
+<Translation Original="Vehicle Scanner" Replace="Transport-Scanner"/>
+<Translation Original="Ascend" Replace="Klettern"/>
+<Translation Original="Object Scanner" Replace="Objekt-Scanner"/>
+<Translation Original="Meteor Shower" Replace="Meteoritenschauer"/>
+<Translation Original="Tornado" Replace="Tornado"/>
+<Translation Original="Black Hole" Replace="Schwarzes Loch"/>
+<Translation Original="Force" Replace="Gewalt"/>
+<Translation Original="Force Type" Replace="Gewalt Typ"/>
+<Translation Original="Options" Replace="Optionen"/>
+<Translation Original="Delete entities" Replace="Elemente löschen"/>
+<Translation Original="Attraction Settings" Replace="Einstellungen zur Attraktion"/>
+<Translation Original="Map Sets" Replace="Karten-Sets"/>
+<Translation Original="Adler Ranch" Replace="Adler-Ranch"/>
+<Translation Original="House near Valentine" Replace="Das Haus neben Valentine's"/>
+<Translation Original="House Scarlett Meadows" Replace="Haus Scarlett Meadows"/>
+<Translation Original="Kidge View" Replace="Kidge Ansicht"/>
+<Translation Original="Blackwater Build Progress" Replace="Fortschritte beim Bau von Blackwater"/>
+<Translation Original="Guarma Ship" Replace="Guarmas Schiff"/>
+<Translation Original="Grand Korrigan" Replace="Der große Corrigan"/>
+
+
+//Sonstiges 2
+<Translation Original="Mp3 Player" Replace="MP3-Spieler"/>
+<Translation Original="Game Music" Replace="Spielmusik"/>
+<Translation Original="Mobile Theater" Replace="Mobiles Theater"/>
+<Translation Original="Cutscene Player" Replace="Cutscene Player"/>
+<Translation Original="Friendlist" Replace="Freundesliste"/>
+<Translation Original="Minigames" Replace="Minispiele"/>
+<Translation Original="Overlay Settings" Replace="Overlay-Einstellungen"/>
+<Translation Original="Gameplay cam zoom" Replace="Vergrößerung der Wildkamera"/>
+<Translation Original="Top-Down Cam" Replace="Kamera von oben"/>
+<Translation Original="No Clip" Replace="No Clip"/>
+<Translation Original="Air Walk / Drive" Replace="In der Luft gehen"/>
+<Translation Original="Freecam" Replace="Freikamera"/>
+<Translation Original="Cap FPS" Replace="FPS-Beschränkung"/>
+<Translation Original="Disable Idle Music" Replace="Musik beim Warten ausschalten"/>
+<Translation Original="Pause Game" Replace="Das Spiel anhalten"/>
+<Translation Original="Decrease Graphics" Replace="Reduzierte Grafiken"/>
+<Translation Original="Disable New Austin Sniper" Replace="Den Scharfschützen deaktivieren (New Austin)"/>
+<Translation Original="Disable Guarma Sniper" Replace="Scharfschützen deaktivieren (Guarma)"/>
+<Translation Original="Disable Guard Zones" Replace="Sicherheitszonen deaktivieren"/>
+<Translation Original="Fix Mission markers" Replace="Missionsmarker reparieren"/>
+<Translation Original="Send Console Message" Replace="Senden einer Nachricht an die Konsole"/>
+<Translation Original="About Rampage" Replace="Über Rampage"/>
+<Translation Original="Dev" Replace="Dev"/>
+<Translation Original="OVERLAY" Replace="OVERLAY"/>
+<Translation Original="Script Monitor" Replace="Skript-Monitor"/>
+<Translation Original="Script Loader" Replace="Skript-Loader"/>
+<Translation Original="Script Terminator" Replace="Skript Terminator"/>
+<Translation Original="Undead Nightmare II" Replace="Alptraum der Untoten II"/>
+<Translation Original="Display FPS" Replace="FPS-Anzeige"/>
+<Translation Original="Display Day & Time (Realtime)" Replace="Anzeige von Tag und Uhrzeit (Echtzeit)"/>
+<Translation Original="Display Time (Ingame)" Replace="Zeitanzeige (im Spiel)"/>
+<Translation Original="Display Coords" Replace="Koordinaten anzeigen"/>
+<Translation Original="Display Temperature" Replace="Anzeige der Temperatur"/>
+<Translation Original="Display Waypoint Distance" Replace="Entfernung zum Wegpunkt anzeigen"/>
+<Translation Original="Always show player cores" Replace="Spieler-Kerne immer anzeigen"/>
+<Translation Original="Always show horse cores" Replace="Immer die Kerne der Pferde zeigen"/>
+<Translation Original="Hide HUD" Replace="HUD ausblenden"/>
+<Translation Original="Hide Radar" Replace="Radar ausblenden"/>
+<Translation Original="Disable Notifications" Replace="Benachrichtigungen deaktivieren"/>
+<Translation Original="Minimap Zoom" Replace="Vergrößern der Minikarte"/>
+<Translation Original="Enable Theater" Replace="Das Theater einschalten"/>
+<Translation Original="Shows" Replace="Anzeigen"/>
+<Translation Original="Modern Medicine" Replace="Moderne Medizin"/>
+<Translation Original="Farmers Daughter" Replace="Eine Bauerntochter"/>
+<Translation Original="Sketching for Sweetheart" Replace="Skizze für die Geliebte"/>
+<Translation Original="World Strongest Man" Replace="Der stärkste Mann der Welt"/>
+<Translation Original="Direct Current Damnation" Replace="Der Fluch der DC"/>
+<Translation Original="Secret of Man flight" Replace="Das Geheimnis des menschlichen Fluges"/>
+<Translation Original="Josiah Blackwater" Replace="Josiah Blackwater"/>
+<Translation Original="Saviors and Savages" Replace="Lebensretter und Wilde"/>
+<Translation Original="Stop current" Replace="Aktuelles anhalten"/>
+<Translation Original="Resume" Replace="Lebenslauf"/>
+<Translation Original="Pause" Replace="Pause"/>
+<Translation Original="Ghost Story" Replace="Eine Geistergeschichte"/>
+<Translation Original="Loop" Replace="Zyklus"/>
+<Translation Original="Play all" Replace="Alle spielen"/>
+<Translation Original="Volume (db)" Replace="Lautstärke (dB)"/>
+<Translation Original="Stop Music Events" Replace="Musikveranstaltungen stoppen"/>
+<Translation Original="Load Audio Bank" Replace="Audiobank herunterladen"/>
+<Translation Original="Custom Honor" Replace="Benutzer-Ehre"/>
+<Translation Original="Current Bounty" Replace="Aktuelles Kopfgeld"/>
+<Translation Original="Bounty Value" Replace="Wert der Belohnung"/>
+<Translation Original="Increase Bounty" Replace="Kopfgeld erhöhen"/>
+<Translation Original="Decrease Bounty" Replace="Kopfgeld reduzieren"/>
+<Translation Original="Clear Bounty" Replace="Kopfgeld entfernen"/>
+<Translation Original="States" Replace="Staaten"/>
+<Translation Original="Cheat Codes" Replace="Cheat-Codes"/>
+<Translation Original="Dreamcatchers" Replace="Traumfänger"/>
+<Translation Original="Dino Bones" Replace="Dino-Knochen"/>
+<Translation Original="Rock Carvings" Replace="Felsenschnitzereien"/>
+<Translation Original="Exotics" Replace="Exoten"/>
+<Translation Original="Legendary Animals Locations" Replace="Legendäre Tierfundorte"/>
+<Translation Original="Cigarette Cards" Replace="Zigarettenkarten"/>
+<Translation Original="Auto Collect All" Replace="Alle automatisch sammeln"/>
+<Translation Original="Famous Gunslingers" Replace="Berühmte Revolverhelden"/>
+<Translation Original="Artists and Poets" Replace="Künstler und Dichter"/>
+<Translation Original="Vistas of America" Replace="Amerikanische Sehenswürdigkeiten"/>
+<Translation Original="Gems of Beauty" Replace="Juwelen der Schönheit"/>
+<Translation Original="Flora of North America" Replace="Flora Nordamerikas"/>
+<Translation Original="Stars of the Stage" Replace="Bühnenstars"/>
+<Translation Original="Fauna of North America" Replace="Die Fauna Nordamerikas"/>
+<Translation Original="Marvels of Travel" Replace="Die Wunder des Reisens"/>
+<Translation Original="World's Champions" Replace="Weltmeister"/>
+<Translation Original="Amazing Inventions" Replace="Erstaunliche Erfindungen"/>
+<Translation Original="Add Health Points" Replace="Gesundheitspunkte hinzufügen"/>
+<Translation Original="Add Stamina Points" Replace="Ausdauerpunkte hinzufügen"/>
+<Translation Original="Add Dead Eye Points" Replace="Dead-Eye-Punkte hinzufügen"/>
+<Translation Original="Permanently" Replace="Ständig"/>
+<Translation Original="Max Health Core" Replace="Maximaler Gesundheitskern"/>
+<Translation Original="Max Stamina Core" Replace="Maximale Kernausdauer"/>
+<Translation Original="Max Dead Eye Core" Replace="Max. dead-eye-Kern"/>
+<Translation Original="Temporary" Replace="Vorübergehend"/>
+<Translation Original="Max Health" Replace="Maximale Gesundheit"/>
+<Translation Original="Max Dead Eye" Replace="Maximum dead eye"/>
+<Translation Original="Custom" Replace="Benutzerdefiniert"/>
+<Translation Original="Dead Eye Core" Replace="Der Dead-Eye-Kern"/>
+
+//Der Rest
+<Translation Original="Default" Replace="Standard"/>
+<Translation Original="LANGUAGE" Replace="SPRACHE"/>
+<Translation Original="PLUGIN" Replace="PLUGIN"/>
+<Translation Original="No Plugins found" Replace="Keine Plugins gefunden"/>
+<Translation Original="CORE SETTINGS" Replace="GRUNDEINSTELLUNGEN"/>
+<Translation Original="TRAINER SEARCH" Replace="TRAINER-SUCHE"/>
+<Translation Original="Min" Replace="Min"/>
+<Translation Original="STATS" Replace="STATISTIK"/>
+<Translation Original="LOAD / SAVE SETTINGS" Replace="EINSTELLUNGEN LADEN / SPEICHERN"/>
+<Translation Original="Save Toggles" Replace="Schaltflächen speichern"/>
+<Translation Original="Load Toggles" Replace="Schaltflächen laden"/>
+<Translation Original="Functions" Replace="Funktionen"/>
+<Translation Original="Submenus" Replace="Untermenu"/>
+<Translation Original="Performance" Replace="Leistung"/>
+<Translation Original="Log" Replace="Log"/>
+<Translation Original="Sysinfo" Replace="Systeminformationen"/>
+<Translation Original="Hotkeys" Replace="Tastenkürzel"/>
+<Translation Original="On Foot" Replace="Gehen"/>
+<Translation Original="Roll" Replace="Rolle"/>
+<Translation Original="Yaw" Replace="Abweichung"/>
+<Translation Original="Pitch" Replace="Neigung"/>
+<Translation Original="DEBUG" Replace="Debug"/>
+<Translation Original="Advanced Logging" Replace="Erweitertes Logbuch"/>
+<Translation Original="Event Logging" Replace="Protokollieren von Ereignissen"/>
+<Translation Original="Throw Exception" Replace="Ausnahme auslösen"/>
+<Translation Original="Test Help" Replace="Hilfe beim Testen"/>
+<Translation Original="AMBIENT LIGHT" Replace="UMGEBUNGSLICHT"/>
+<Translation Original="Color" Replace="Farbe"/>
+<Translation Original="Range" Replace="Reichweite"/>
+<Translation Original="Brightness" Replace="Helligkeit"/>
+<Translation Original="Stop Animation" Replace="Anhalten der Animation"/>
+<Translation Original="Search Results" Replace="Ergebnisse"/>
+<Translation Original="Set Hotkey: " Replace="Einen Hotkey setzen: "/>
+<Translation Original="MODEL CHANGER [ANIMAL]" Replace="MODELLWECHSEL [TIER]"/>
+<Translation Original="MODEL CHANGER [HORSE]" Replace="MODELLWECHSEL [PFERD]"/>
+<Translation Original="MODEL CHANGER [HUMAN]" Replace="MODELLWECHSEL [PERSON]"/>
+<Translation Original="MODEL CHANGER" Replace="WECHSEL DES MODELLS"/>
+<Translation Original="OUTFIT SAVER" Replace="Outfit speichern"/>
+<Translation Original="OUTFIT LOADER" Replace="Outfit laden"/>
+<Translation Original="WARDROBE" Replace="GARDEROBE"/>
+<Translation Original="ANIMATIONS" Replace="ANIMATIONEN"/>
+<Translation Original="Dictionaries" Replace="Wörterbücher"/>
+<Translation Original="ANIMATION DICTIONARIES" Replace="GRAFISCHE WÖRTERBÜCHER"/>
+<Translation Original="BOUNTY" Replace="Kopfgeld"/>
+<Translation Original="MONEY" Replace="Geld"/>
+<Translation Original="Revolver" Replace="Revolver"/>
+<Translation Original="Total Money Dropped " Replace="Insgesamt fallen gelassene Gelder "/>
+<Translation Original="Cash Bundle" Replace="Geldpaket"/>
+<Translation Original="MINIGAMES" Replace="MINI-GAMES"/>
+<Translation Original="FRIENDLIST" Replace="FREUNDESLISTE"/>
+<Translation Original="CUTSCENE PLAYER" Replace="ZWISCHENSEQUENZ"/>
+<Translation Original="MOBILE THEATER" Replace="MOBILES THEATER"/>
+<Translation Original="GAME MUSIC" Replace="SPIELMUSIK"/>
+<Translation Original="Files" Replace="Dateien"/>
+<Translation Original="MP3 PLAYER" Replace="MP3-Spieler"/>
+<Translation Original="No playable files found" Replace="Abspielbare Dateien nicht gefunden"/>
+<Translation Original="Plays: Nothing" Replace="Spielen: Nichts"/>
+<Translation Original="TIME" Replace="ZEIT"/>
+<Translation Original="PED" Replace="NPC"/>
+<Translation Original="Count" Replace="Zählen"/>
+<Translation Original="On Screen" Replace="Auf dem Bildschirm"/>
+<Translation Original="Axis" Replace="Achse"/>
+<Translation Original="WATER" Replace="WASSER"/>
+<Translation Original="WEATHER" Replace="WETTER"/>
+<Translation Original="PROPSETS" Replace="Requisiten"/>
+<Translation Original="Aimbot" Replace="Automatisches zielen"/>
+<Translation Original="Ammo:" Replace="Munition:"/>
+<Translation Original="HORSE LOADER" Replace="PFERDELADER"/>
+<Translation Original="MOODS" Replace="STIMMUNGEN"/>
+<Translation Original="EMOTES" Replace="EMOTIONEN"/>
+<Translation Original="COATS" Replace="Mäntel"/>
+<Translation Original="VESTS" Replace="WESTEN"/>
+<Translation Original="SHIRTS" Replace="SHIRTS"/>
+<Translation Original="TORSOS" Replace="Oberkörper"/>
+<Translation Original="NECKWEAR" Replace="HALSTUCH"/>
+<Translation Original="EYES" Replace="AUGEN"/>
+<Translation Original="HAIR" Replace="HAARE"/>
+<Translation Original="HEAD" Replace="KOPF"/>
+<Translation Original="MASKS" Replace="MASKEN"/>
+<Translation Original="HATS" Replace="HÜTE"/>
+<Translation Original="SEARCH" Replace="SUCHEN"/>
+<Translation Original="Search for a Ped" Replace="Suche nach einem NPC"/>
+<Translation Original="Play Animation" Replace="Abspielen der Animation"/>
+<Translation Original="Anim Flags" Replace="Animierte Flaggen"/>
+<Translation Original="PLAY SPEECH" Replace="SPRACHWIEDERGABE"/>
+<Translation Original="NECKTIES" Replace="KRAWATTEN"/>
+<Translation Original="TEETH" Replace="ZÄHNE"/>
+<Translation Original="MUSTACHE" Replace="Schnurrbart"/>
+<Translation Original="SIDEBURNS" Replace="KOTELETTEN"/>
+<Translation Original="DAMAGE PACKS" Replace="SCHADENSPAKETE"/>
+<Translation Original="Pistol" Replace="Pistole"/>
+<Translation Original="Rifle" Replace="Gewehr"/>
+<Translation Original="Jewelery Sack" Replace="Schmucksack"/>
+<Translation Original="Goldbar" Replace="Goldbarren"/>
+<Translation Original="Unlock Journal" Replace="Logbuch entriegeln"/>
+<Translation Original="SCRIPT MONITOR" Replace="SCRIPT MONITOR"/>
+<Translation Original="Lang" Replace="Lang"/>
+<Translation Original="ABOUT RAMPAGE" Replace="ÜBER RAMPAGE"/>
+<Translation Original="Normal" Replace="Normal"/>
+<Translation Original="Name:" Replace="Name:"/>
+<Translation Original="Commands" Replace="Befehle"/>
+<Translation Original="POSSE" Replace="ÜBER"/>
+<Translation Original="CANNON SPAWNER" Replace="KANONEN Spawner"/>
+<Translation Original="Forward" Replace="Weiter"/>
+<Translation Original="Dummy" Replace="Schaufensterpuppe"/>
+<Translation Original="TRAIN CREATOR" Replace="ZUGERSTELLER"/>
+<Translation Original="Save Current" Replace="Aktuelles speichern"/>
+<Translation Original="Load Custom" Replace="Benutzerdefiniertes laden"/>
+<Translation Original="Shops and Services" Replace="Geschäfte und Dienstleistungen"/>
+
+//noch gefunden
+<Translation Original="Enable Ped Component" Replace="NPC-Komponente aktivieren"/>
+<Translation Original="Disable Ped Component" Replace="NPC-Komponente deaktivieren"/>
+<Translation Original="Set Body Component" Replace="Körperkomponente festlegen"/>
+<Translation Original="Load from Datafile" Replace="Aus Datendatei laden"/>
+<Translation Original="Firework Burst" Replace="Feuerwerk explodieren"/>
+<Translation Original="Firework Points" Replace="Feuerwerk punkte"/>
+<Translation Original="Firework Finish Burst" Replace="Feuerwerk Endexplosion"/>
+<Translation Original="Magician Smoke" Replace="Magischer Rauch"/>
+<Translation Original="Meteor Explosion" Replace="Meteor Explosion"/>
+<Translation Original="Spirit Animal Fade" Replace="Geistertier verblassen"/>
+<Translation Original="Load Default Components" Replace="Standardkomponenten laden"/>
+<Translation Original="Wild Animals Ignore" Replace="Wildtiere ignorieren"/>
+<Translation Original="Cores" Replace="Kerne"/>
+<Translation Original="Grave Locations" Replace="Standorte der Gräber"/>
+<Translation Original="Teleport to" Replace="Teleportieren nach"/>
+</Table>
