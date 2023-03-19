@@ -17,7 +17,7 @@ console.log("Updating to the latest website version...")
 for (let i = 0; i < 5; i++) {
   console.count("Waiting...");
 }
-console.log("Updated to website version 1.9")
+console.log("Updated to website version 2.0")
 console.log("Fetching files")
 console.log("Injecting Html files...")
 console.log("Injecting Css files...")
@@ -72,6 +72,8 @@ function openCity(evt, cityName) {
         x.className = "topnav";
       }
     }
+
+    
 
     
      //clock
