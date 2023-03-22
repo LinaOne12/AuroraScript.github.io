@@ -17,7 +17,7 @@ console.log("Updating to the latest website version...")
 for (let i = 0; i < 5; i++) {
   console.count("Waiting...");
 }
-console.log("Updated to website version 2.0")
+console.log("Updated to website version 2.1")
 console.log("Fetching files")
 console.log("Injecting Html files...")
 console.log("Injecting Css files...")
