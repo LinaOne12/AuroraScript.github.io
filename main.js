@@ -2,34 +2,7 @@
 
 
 
-console.log("Initializing...")
-for (let i = 0; i < 5; i++) {
-  console.count("Waiting...");
-}
-console.log("Initialized")
-console.log("Fetching data...")
-for (let i = 0; i < 5; i++) {
-  console.count("Waiting...");
-}
-console.log("All your data belongs to us")
-console.log("Data fetched")
-console.log("Updating to the latest website version...")
-for (let i = 0; i < 5; i++) {
-  console.count("Waiting...");
-}
-console.log("Updated to website version 2.1")
-console.log("Fetching files")
-console.log("Injecting Html files...")
-console.log("Injecting Css files...")
-console.log("Injecting JavaScript files...")
-console.log("Injecting Image files...")
-console.log("Injecting video files...")
-console.log("All your files belong to us")
-console.log("Injected")
-for (let i = 0; i < 5; i++) {
-  console.count("Waiting...");
-}
-console.log("All files have been installed correctly enjoy your stay :)")
+
 
 
 
