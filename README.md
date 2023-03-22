@@ -4,6 +4,5 @@ I decided to make this open src, I just used Rampage as something to test my web
 
 Btw the website is not mobile friendly and im not sure if im ever gonna implement it.
 
-You can view the website here: http://rampage-menu.com/ Also sometimes the domain will stop working for some unknown reason and ill just have to reset it, use this if that happens: https://unknownuser56.github.io/RampageMenu.github.io/
-
+You can view the website here: http://rampage-menu.com/ Also sometimes the domain will stop working for some unknown reason and ill just have to reset it.
 :)
