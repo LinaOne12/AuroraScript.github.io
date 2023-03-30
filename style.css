@@ -398,11 +398,14 @@ li {
   ul {
   list-style: none;
   background: #1a1a1a;
+  position: fixed;
   }
   ul li {
   display: inline-block;
-  position: relative;
+  position: relative; 
   }
+
+  
   ul li a {
   display: block;
   padding: 20px 25px;
@@ -427,3 +430,9 @@ li {
   ul li:hover ul.dropdown {
   display: block;
   }
+  
+
+  button {
+    background-color: DodgerBlue;
+    color: #1a1a1a;
+  } 

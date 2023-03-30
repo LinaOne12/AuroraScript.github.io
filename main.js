@@ -115,3 +115,10 @@ var x = "Is the browser online? " + navigator.onLine;
 
 
 
+// Scroll To Top
+
+function scrollToTop() {
+
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  
+  }
