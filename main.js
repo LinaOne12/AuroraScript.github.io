@@ -123,6 +123,9 @@ function scrollToTop() {
   
   }
 
-  // Quiz
+  // Refresh 
 
+  function refreshPage(){
+    window.location.reload();
+} 
   

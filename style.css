@@ -1,4 +1,12 @@
-
+body {
+  background-color:  #0b0c0f;
+  background-image: url('https://wallpaperaccess.com/full/3492868.gif');
+  background-size: cover;  
+  overflow-x: hidden;
+  height: 100vh;
+  padding:0;
+  margin:0;
+}
 
 
 li {
@@ -56,19 +64,7 @@ li {
       p {
         font-family:"Brush Script MT", cursive;
       }
-      
-     
     
-      body {
-        background-color:  #0b0c0f;
-        background-image: url('https://wallpaperaccess.com/full/3492868.gif');
-        background-size: cover;  
-        overflow-x: hidden;
-        height: 100vh;
-        padding:0;
-        margin:0;
-    }
-      
       
       h1 {
         font-size: 25px;
