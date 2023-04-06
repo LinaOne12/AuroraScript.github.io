@@ -411,7 +411,7 @@ li {
 
 /* Style buttons */
 .btn {
-  background-color: DodgerBlue;
+  background-color: rgb(184, 20, 8);
   border: none;
   color: white;
   padding: 12px 30px;
@@ -422,7 +422,7 @@ li {
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: rgb(255, 0, 0);
 }
 
 
