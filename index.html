@@ -46,7 +46,7 @@
 
 <!-- Just Released -->
 
-<header style="box-shadow: 0px 0px 5px rgb(255, 0, 0);"> <p>  Website version <b> 3.1 </b> has just been released! Check out the <span style="text-decoration: underline;"> <a href="website changelogs.html"> website changelogs </a> </span> for further details. </p> </header>
+<header style="box-shadow: 0px 0px 5px rgb(0, 238, 255)"> <p>  Website version <b> 3.2 </b> has just been released! Check out the <span style="text-decoration: underline;"> <a href="website changelogs.html"> website changelogs </a> </span> for further details. </p> </header>
 
 <br>
 
@@ -60,30 +60,6 @@
   <!-- Refresh -->
   
  <button onClick="refreshPage()">Refresh Page </button>
-
- <!-- Coords-->
-
-<button onclick="getLocation()"> Coordinates? </button>
-
-<p id="demo"></p>
-
-<script>
-var x = document.getElementById("demo");
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
-</script>
-
 </div>
 <br>
 
@@ -226,7 +202,7 @@ function showPosition(position) {
   <!-- Main img -->
 
   <div class="center">
-  <img src="images/Rampage.png" style="box-shadow: 0px 0px 5px rgb(255, 0, 0);"alt="Rampage Menu"> 
+  <img src="images/Rampage.png" style="box-shadow: 0px 0px 5px rgb(0, 238, 255)" alt="Rampage Menu"> 
   <br>
   <br>
 
