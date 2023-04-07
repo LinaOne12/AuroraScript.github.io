@@ -58,10 +58,35 @@
   <button onclick='window.scrollTo({top: 10000, behavior: "smooth"});'>Scroll to Bottom</button>
 
   <!-- Refresh -->
+  
+ <button onClick="refreshPage()">Refresh Page </button>
 
-&nbsp; <button onClick="refreshPage()">Refresh Page </button>
+ <!-- Coords-->
+
+<button onclick="getLocation()"> Coordinates? </button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
 </div>
 <br>
+
 
 
 
@@ -383,6 +408,8 @@
   <button onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Scroll to Top</button>
   
   </div>
+
+  
 
     
 
