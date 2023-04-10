@@ -33,7 +33,7 @@ console.log = function()
     }
 };
 
-console.log("Toxic is based")
+console.log("Rampage on top")
 
 
 
@@ -166,3 +166,44 @@ function scrollToTop() {
     window.location.reload();
 } 
   
+
+// location 
+
+const button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+  navigator.geolocation.getCurrentPosition(position => {
+
+    const { latitude, longitude } = position.coords;
+
+    const url = "https://nominatim.openstreetmpa.org/reverse?format=json&lat=${latitude}&lon=${longitude}";
+    fetch(url).then(res => res.json()).then(data => {
+      console.table(data.address);
+    }).catch(() => {
+      console.log("error fetching data from API");
+    })
+    })
+  })
+
+
+  //location method 2
+
+  const findMyState = () => {
+    const status = document.querySelector('.status');
+
+    const success = (position) => {
+      
+    }
+    console.log(position)
+
+    const error = () => {
+      status.textContent = 'An error has. Unable to retrieve your exact location';
+    }
+
+    navigator.geolocation.getCurrentPosition(success, error);
+
+
+
+    document.querySelector('.find-state').addEventListener('click', findMyState);
+  }
+
