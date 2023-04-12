@@ -33,7 +33,9 @@ console.log = function()
     }
 };
 
+console.log("Website Data Loaded")
 console.log("Rampage on top")
+
 
 
 
