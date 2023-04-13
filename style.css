@@ -211,19 +211,17 @@ li {
           }
           
           a:hover {
-            color: rgb(247, 0, 0);
-            background-color transparent;
+            color:rgb(7, 205, 255);
             text-decoration: underline;
           }
           
           a:active {
-            color: rgb(7, 205, 255);
+            color: rgb(247, 0, 0);
             background-color: transparent;
             text-decoration: underline;
           }
 
           
-
           div {
             text-align: center;
           }
@@ -317,7 +315,5 @@ button:hover {
   cursor: pointer;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
