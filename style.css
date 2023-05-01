@@ -193,33 +193,7 @@ li {
           font-size: 55px;
       }
     
-      a:link {
-            color: rgb(240, 0, 0);
-            background-color: transparent;
-            text-decoration: none;
-            font-size: 25px
-          }
-          
-          a:link {
-            font-family:"Brush Script MT", cursive;
-          }
-          
-          a:visited {
-            color: rgb(247, 0, 0);
-            background-color: transparent;
-            text-decoration: none;
-          }
-          
-          a:hover {
-            color:rgb(7, 205, 255);
-            text-decoration: underline;
-          }
-          
-          a:active {
-            color: rgb(247, 0, 0);
-            background-color: transparent;
-            text-decoration: underline;
-          }
+     
 
           
           div {
