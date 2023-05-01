@@ -20,7 +20,7 @@ body {
 
 
 li {
-      font-family:"Brush Script MT", cursive;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       text-align: center;
       color:  rgb(0, 238, 255);
     }
@@ -52,12 +52,12 @@ li {
     }
     
     pre {
-      font-family:"Brush Script MT", cursive;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     
     
     b {
-      font-family:"Brush Script MT", cursive;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     
     p {
@@ -73,7 +73,7 @@ li {
       }
     
       p {
-        font-family:"Brush Script MT", cursive;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
     
       
@@ -90,7 +90,7 @@ li {
       }
     
       h1 {
-        font-family:"Brush Script MT", cursive;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
     
     
@@ -107,7 +107,7 @@ li {
       }
     
       h2 {
-        font-family:"Brush Script MT", cursive;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
     
       h3 {
@@ -135,7 +135,7 @@ li {
       }
     
       h4 { 
-        font-family:"Brush Script MT", cursive;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
     
       h5 {
@@ -155,7 +155,7 @@ li {
       }
 
       h6 { 
-        font-family:"Brush Script MT", cursive;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
 
       h6 {
@@ -167,7 +167,7 @@ li {
       }
 
       h7 { 
-        font-family:"Brush Script MT", cursive;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
     
       header {
@@ -271,7 +271,7 @@ li {
 * {
   padding: 0;
   margin: 0;
-  font-family: "Brush Script MT", cursive;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
   
