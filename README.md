@@ -6,4 +6,4 @@ You can view the website here: http://rampage-menu.com/ Also sometimes the domai
 :)
 
 
-![Screenshot 2023-05-04 013924](https://user-images.githubusercontent.com/125640650/236120436-d6e18c57-bbdb-47ea-bebf-ef823acf0d00.png)
+![Screenshot 2023-05-04 022759](https://user-images.githubusercontent.com/125640650/236126969-52307113-bb01-429a-a632-9812ddc94909.png)
