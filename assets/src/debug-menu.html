@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+  <title>RampageMenu</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/RampageDev.png">
+
+  <link rel="stylesheet" href="/assets/stylesheets/dark-mode.css">
+  <link rel="stylesheet" href="/assets/stylesheets/nav.css">
+  <link rel="stylesheet" href="/assets/stylesheets/style.css">
+  <link rel="script" href="assets/javascripts/script.js">
+
+ 
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Navigation Menu -->
+    <div class="navbar">
+      <a href="/index.html" class="tab active">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Rampage
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/assets/src/install.html">Installation</a>
+          <a href="assets/src/controls.html">Controls</a>
+          <a href="assets/src/faq.html">FAQ</a>
+          <a href="assets/src/links.html">Links</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Downloads
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="assets/src/rdr2-download.html">RDR2</a>
+          <a href="assets/src/gta-download.html">GTA V</a>
+          <a href="assets/src/online-download.html">Exclusive Vip Online</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Changelogs
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="assets/src/rdr2-changelogs.html">RDR2</a>
+          <a href="assets/src/gta-changelogs.html">GTA V</a>
+          <a href="/assets/src/release-notes.html">Release Notes</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Extra
+          <span class="material-symbols-outlined">arrow_drop_down</span>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="assets/src/credits.html">Credits</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Transition-->
+  
+  <style>
+      body {
+        opacity: 1;
+      }
+  
+      .fade-in {
+        animation: fade-in 0.5s ease-in-out;
+      }
+  
+      .fade-out {
+        animation: fade-out 0.5s ease-in-out;
+      }
+  
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+  
+      @keyframes fade-out {
+        0% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+      }
+    </style>
+  
+  
+  <div id="content" class="fade-in"> 
+
+  <!-- Main content -->
+
+
+  
+  
+  
+  <button onclick="showConfirmation()">Toggle Debug Info</button>
+  <button onclick="hideDebugInfo()">Hide Debug Info</button>
+  <button onclick="downloadDebugInfo()">Download Debug Info</button>
+
+  <div class="debug-menu" id="debugMenu">
+    <div class="debug-menu-column">
+      <h3>Website Info</h3>
+      <br>
+      <p><strong>Website Name:</strong> <span id="websiteName"></span></p>
+      <br>
+      <p><strong>Website URL:</strong> <span id="websiteURL"></span></p>
+      <br>
+      <p><strong>Website Protocol:</strong> <span id="websiteProtocol"></span></p>
+      <br>
+      <p><strong>Website Port:</strong> <span id="websitePort"></span></p>
+      <br>
+      <p><strong>Screen Resolution:</strong> <span id="screenResolution"></span></p>
+      <br>
+      <p><strong>Browser Language:</strong> <span id="browserLanguage"></span></p>
+      <br>
+      <p><strong>Page Load Time:</strong> <span id="pageLoadTime"></span>ms</p>
+      <br>
+    </div>
+    <div class="debug-menu-column">
+      <h3>Client Info</h3>
+      <br>
+      <p><strong>Client IP:</strong> <span id="clientIP"></span></p>
+      <br>
+      <p><strong>Client Country:</strong> <span id="clientCountry"></span></p>
+      <br>
+      <p><strong>Client State/Region:</strong> <span id="clientState"></span></p>
+      <br>
+      <p><strong>Client City:</strong> <span id="clientCity"></span></p>
+      <br>
+      <p><strong>Client Postal Code:</strong> <span id="clientPostalCode"></span></p>
+      <br>
+      <p><strong>Ping:</strong> <span id="ping"></span></p>
+      <br>
+      <p><strong>User Agent:</strong> <span id="userAgent"></span></p>
+      <br>
+    </div>
+  </div>
+
+  <script>
+    var debugMenuVisible = false;
+
+    function showConfirmation() {
+      if (confirm("Are you sure you want to show the debug info? It will show sensitive information.")) {
+        toggleDebugMenu();
+      }
+    }
+
+    function toggleDebugMenu() {
+      var debugMenu = document.getElementById('debugMenu');
+      debugMenuVisible = !debugMenuVisible;
+      if (debugMenuVisible) {
+        debugMenu.style.display = 'flex';
+        updateDebugMenu();
+      } else {
+        debugMenu.style.display = 'none';
+      }
+    }
+
+    function hideDebugInfo() {
+      var debugMenu = document.getElementById('debugMenu');
+      debugMenuVisible = false;
+      debugMenu.style.display = 'flex';
+
+      var debugInfo = debugMenu.getElementsByTagName('span');
+      for (var i = 0; i < debugInfo.length; i++) {
+        debugInfo[i].textContent = '';
+      }
+    }
+
+    function downloadDebugInfo() {
+      var debugMenu = document.getElementById('debugMenu');
+      var debugText = '';
+
+      var debugInfo = debugMenu.getElementsByTagName('p');
+      for (var i = 0; i < debugInfo.length; i++) {
+        var label = debugInfo[i].getElementsByTagName('strong')[0].textContent;
+        var value = debugInfo[i].getElementsByTagName('span')[0].textContent;
+        debugText += label + ': ' + value + '\n';
+      }
+
+      var element = document.createElement('a');
+      element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(debugText));
+      element.setAttribute('download', 'debug_info.txt');
+      element.style.display = 'none';
+      document.body.appendChild(element);
+      element.click();
+      document.body.removeChild(element);
+    }
+
+    // Function to get website name
+    function getWebsiteName() {
+      return document.title;
+    }
+
+    // Function to get website URL
+    function getWebsiteURL() {
+      return window.location.href;
+    }
+
+    // Function to get website protocol
+    function getWebsiteProtocol() {
+      return window.location.protocol;
+    }
+
+    // Function to get website port
+    function getWebsitePort() {
+      return window.location.port;
+    }
+
+    // Function to get screen resolution
+    function getScreenResolution() {
+      return window.screen.width + 'x' + window.screen.height;
+    }
+
+    // Function to get browser language
+    function getBrowserLanguage() {
+      return navigator.language;
+    }
+
+    // Function to calculate page load time
+    function calculatePageLoadTime() {
+      return performance.now();
+    }
+
+    // Function to get client IP
+    function getClientIP() {
+      return fetch('https://api.ipify.org/?format=json')
+        .then(response => response.json())
+        .then(data => data.ip);
+    }
+
+    // Function to get client location
+    function getClientLocation() {
+      return fetch('https://ipapi.co/json/')
+        .then(response => response.json());
+    }
+
+    // Function to calculate ping
+    function calculatePing() {
+      const startTime = Date.now();
+      return fetch(window.location.href)
+        .then(() => Date.now() - startTime);
+    }
+
+    // Function to get user agent
+    function getUserAgent() {
+      return navigator.userAgent;
+    }
+
+    // Update debug menu with information
+    function updateDebugMenu() {
+      document.getElementById('websiteName').textContent = getWebsiteName();
+      document.getElementById('websiteURL').textContent = getWebsiteURL();
+      document.getElementById('websiteProtocol').textContent = getWebsiteProtocol();
+      document.getElementById('websitePort').textContent = getWebsitePort();
+      document.getElementById('screenResolution').textContent = getScreenResolution();
+      document.getElementById('browserLanguage').textContent = getBrowserLanguage();
+      const loadTime = calculatePageLoadTime();
+      document.getElementById('pageLoadTime').textContent = loadTime.toFixed(2);
+      getClientIP().then(ip => {
+        document.getElementById('clientIP').textContent = ip;
+      });
+      getClientLocation().then(location => {
+        document.getElementById('clientCountry').textContent = location.country_name;
+        document.getElementById('clientState').textContent = location.region;
+        document.getElementById('clientCity').textContent = location.city;
+        document.getElementById('clientPostalCode').textContent = location.postal;
+      });
+      calculatePing().then(ping => {
+        document.getElementById('ping').textContent = ping + 'ms';
+      });
+      document.getElementById('userAgent').textContent = getUserAgent();
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+  <!-- Clock -->
+  <div class="clock" style="text-align: center;">
+    <div class="clock-content">
+      <div id="clock"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+
+ 
+
+  
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const clock = document.getElementById('clock');
+      clock.innerText = now.toLocaleTimeString();
+    }
+    setInterval(updateClock, 1000);
+  </script>
+
+
+</body>
+
+</html>

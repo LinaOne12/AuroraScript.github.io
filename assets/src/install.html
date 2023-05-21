@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+      <meta charset="UTF-8">
+
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>RampageMenu</title>
+
+      <link rel="stylesheet" href="">
+
+      <link rel="stylesheet" href="">
+
+      <link rel="icon" type="images/x-icon" href="assets/images/RampageDev.png">
+      
+      </head>
+      <body>
+
+
+<div class="theme-switch-wrapper">
+      <p> Light mode switch </p>
+      <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+      </div>
+    
+
+      
+
+
+          
+
+          
+      
+    <!-- Nav-->
+
+    <div class="navbar">
+
+
+      <!-- Home-->
+<div> 
+      <a href="index.html">Home</a>
+</div>
+
+      <!--Rampage-->
+      
+      <div class="dropdown">
+            <button class="dropbtn">Rampage 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/assets/src/in" class="tab active" data-tab="controls.html"> Installation</a>
+              <a href="controls.html">Controls</a>
+              <a href="faq.html">FAQ</a>
+              <a href="links.html">Links</a>
+            </div>
+          </div>
+
+          <!--Downloads-->
+          <div class="dropdown">
+            <button class="dropbtn">Downloads
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="rdr2-download.html"> RDR2</a>
+              <a href="gta-download.html">GTA V</a>
+              <a href="online-download.html">Exclusive Vip Online</a>
+            </div>
+          </div>
+
+          <!--Changelogs-->
+
+          <div class="dropdown">
+            <button class="dropbtn">Changelogs
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="rdr2-changelogs.html"> RDR2</a>
+              <a href="gta-changelogs.html">GTA V</a>
+              <a href="website-changelogs.html">Website</a>
+            </div>
+          </div>
+
+          <!--Extra-->
+
+          <div class="dropdown">
+            <button class="dropbtn">Extra
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="account.html"> Account Center</a>
+              <a href="credits.html">Credits</a>
+            </div>
+          </div>
+
+        </div>
+        
+    
+
+
+
+<script>
+      const toggleSwitch = document.querySelector('input[type="checkbox"]');
+      
+      function switchTheme(event) {
+            if (event.target.checked) {
+                  document.documentElement.setAttribute('data-theme', 'dark');
+                  document.body.classList.add('dark-mode');
+            } else {
+                  document.documentElement.setAttribute('data-theme', 'light');
+                  document.body.classList.remove('dark-mode');
+            }    
+      }
+      
+      toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+
+</body>
+</html>

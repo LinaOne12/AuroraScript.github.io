@@ -1,0 +1,131 @@
+body {
+      background-color: #fff; /* default light mode background color */
+      color: #000; /* default light mode text color */
+      transition: all 0.5s ease;
+      height: 100%;
+    }
+    
+    body.light-mode {
+      background-color: #fdfdfd; /* dark mode background color */
+      color: #fff; /* dark mode text color */
+    }
+    
+    header {
+      background-color:#333; /* default light mode header background color */
+      padding: 10px;
+    }
+    
+    header.dark-mode {
+      background-color: #333; /* dark mode header background color */
+    }
+    body {
+	background-color: #fff; /* default background color */
+	color: #333; /* default text color */
+	transition: background-color 0.5s ease;
+}
+
+.dark-mode {
+	background-color: #ffffff; /* dark background color */
+	color: #fff; /* light text color */
+	transition: background-color 0.5s ease;
+}
+
+
+    
+    body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          background-color:#1d1d1d;
+          color: #fff;
+          height: 100%;
+        }
+    
+    .theme-switch-wrapper {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+    }
+    
+    .theme-switch {
+          display: inline-block;
+          height: 34px;
+          position: relative;
+          width: 60px;
+    }
+    
+    .theme-switch input {
+          display:none;
+    }
+    
+    .slider {
+          background-color: rgb(52, 52, 54);
+          bottom: 0;
+          cursor: pointer;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transition: .4s;
+    }
+    
+    .slider:before {
+          background-color: white;
+          bottom: 4px;
+          content: "";
+          height: 26px;
+          left: 4px;
+          position: absolute;
+          transition: .4s;
+          width: 26px;
+    }
+    
+    input:checked + .slider {
+          background-color: #555;
+    }
+    
+    input:checked + .slider:before {
+          transform: translateX(26px);
+          background-color: white;
+    }
+    
+    .slider.round {
+          border-radius: 34px;
+    }
+    
+    .slider.round:before {
+          border-radius: 50%;
+    }
+    
+    .fas.fa-moon {
+          font-size: 24px;
+    }
+
+    
+[data-theme="dark"] #date-time {
+      color: #272727; /* Change the color code to the desired light mode color */
+    }
+    
+    [data-theme="dark"] p {
+      color: #272727; /* Change the color code to the desired light mode color */
+    }
+    
+    [data-theme="dark"] h1 {
+      color: #272727; /* Change the color code to the desired light mode color */
+    }
+    
+    [data-theme="dark"] label {
+      color: #272727; /* Change the color code to the desired light mode color */
+    }
+    
+    [data-theme="dark"] h2 {
+      color: #272727; /* Change the color code to the desired light mode color */
+    }
+    
+    [data-theme="dark"] span {
+      color: #272727; /* Change the color code to the desired light mode color */
+    }
+    
+    [data-theme="light"] h7 {
+      color: white; /* Change the color code to the desired light mode color */
+    }
