@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Dash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Game</a></li>
+      <li><a href="changelogs.html">Changelogs</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="gameContainer">
+    <canvas id="gameCanvas" width="480" height="320"></canvas>
+
+    <div id="controlsContainer">
+      <h3 id="controls-label">Controls</h3>
+      <div class="control">
+        <span class="control-key">Left Arrow:</span>
+        <span>Move left</span>
+      </div>
+      <div class="control">
+        <span class="control-key">Right Arrow:</span>
+        <span>Move right</span>
+      </div>
+    </div>
+
+    <div id="settingsContainer">
+      <h3 id="settings-label">Settings</h3>
+      <div class="setting">
+        <label for="playerColorInput">Player Color:</label>
+        <input type="color" id="playerColorInput" value="#ffffff">
+      </div>
+      <div class="setting">
+        <label for="obstacleColorInput">Obstacle Color:</label>
+        <input type="color" id="obstacleColorInput" value="#ff0000">
+      </div>
+      <div class="setting">
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="normal">Normal</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="setting">
+        <input type="checkbox" id="autoStartToggle">
+        <label for="autoStartToggle">Auto start after death</label>
+      </div>
+      <div class="setting">
+        <button id="applySettingsButton">Apply Settings</button>
+      </div>
+    </div>
+
+    <div id="descriptionContainer">
+      <h3>Description</h3>
+      <p>Avoid the obstacles and survive as long as possible!</p>
+      <p>Color Dash is an exciting game where you control a player and navigate through obstacles of different colors. The goal is to avoid colliding with the obstacles by moving left or right using the arrow keys. The player color and obstacle color can be customized in the settings. Your score increases as you survive longer, and the game becomes more challenging based on the selected difficulty level. Enable the "Auto start after death" option to automatically restart the game after a collision. Have fun playing Color Dash!</p>
+    </div>
+
+   
+    <div id="buttonsContainer">
+      <button id="startButton">Start</button>
+      <button id="pauseButton" disabled>Pause</button>
+      <button id="resetButton" disabled>Reset</button>
+    </div>
+
+    <div id="infoContainer">
+      <p id="currentRound">Round: 0</p>
+      <p id="currentScore">Score: 0</p>
+      <p id="totalTime">Total Time: 00:00</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

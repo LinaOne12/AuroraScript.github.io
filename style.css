@@ -1,0 +1,251 @@
+body {
+      background-color: #161616;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+
+
+  
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    nav :hover {
+      color: #00aaff;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    #gameContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #gameCanvas {
+      border: 1px solid #00aaff;
+      margin-top: 20px;
+    }
+    
+    #controlsContainer {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translate(-50%, -50%);
+      background-color: #292929;
+      color: #fff;
+      padding: 20px;
+      border: 2px solid #00aaff;
+      border-radius: 4px;
+    }
+    
+    #settingsContainer {
+      position: absolute;
+      top: 100px;
+      left: 20px;
+      background-color: #292929;
+      color: #fff;
+      padding: 20px;
+      border: 2px solid #00aaff;
+      border-radius: 4px;
+    }
+    
+    #changelogsContainer {
+      position: absolute;
+      top: 12px;
+      left: 2200px;
+      background-color: #292929;
+      color: #fff;
+      padding: 20px;
+      border: 2px solid #00aaff;
+      border-radius: 4px;
+    }
+    
+    #descriptionContainer {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background-color: #292929;
+      color: #fff;
+      padding: 20px;
+      border: 2px solid #00aaff;
+      border-radius: 4px;
+    }
+    
+    #buttonsContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    #infoContainer {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      color: #fff;
+      text-align: right;
+    }
+    
+    .settings-label {
+      font-weight: bold;
+    }
+    
+    .setting {
+      margin-top: 10px;
+    }
+    
+    .controls-label {
+      font-weight: bold;
+    }
+    
+    .control {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5px;
+    }
+    
+    .control-key {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    .release-notes-container {
+      margin-top: 100px; /* Adjust the margin-top as needed to create space for the header */
+      background-color: #1f1f1f;
+      color: #fff;
+      padding: 20px;
+      border: 2px solid #00aaff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-height: calc(100vh - 200px); /* Adjust the maximum height as needed */
+      overflow-y: auto;
+      position: relative;
+      z-index: 1;
+    }
+    
+    
+    
+    .release-notes:hover {
+      cursor: pointer;
+    }
+    
+    .release-notes:hover .version-label {
+      text-decoration: underline;
+    }
+    
+    .release-notes-content {
+      display: none;
+      margin-top: 10px;
+      border-top: 1px solid rgb(255, 255, 255);
+      padding-top: 10px;
+      cursor: pointer;
+    }
+    
+    .release-notes-content.open {
+      display: block;
+    }
+    
+    .release-notes-content ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .release-notes-content ul li:before {
+      content: "\2022";
+      color: #00aaff;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    
+    
+    .release-notes-content {
+      display: none;
+      margin-top: 10px;
+      border-top: 1px solid white;
+      padding-top: 10px;
+      cursor: pointer;
+      
+    }
+    
+    .release-notes-content.open {
+      display: block;
+    }
+    
+    .release-notes-section {
+      margin-bottom: 20px; /* Adjust the margin as per your preference */
+    }
+    
+    .version-container {
+      cursor: pointer;
+    }
+    
+    .version-date {
+      font-size: 14px;
+      color: white;
+      margin-bottom: 10px;
+    }
+    
+    .category-label {
+      color: #00aaff; 
+    }
+    
+    .category-divider {
+      border: none;
+      border-top: 1px solid white;
+      margin: 20px 0;
+    }
+    
+    
+    h3 {
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    ul {
+      padding-left: 20px;
+      margin-top: 0;
+    }
+    
+    li {
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    
+
+
+    
