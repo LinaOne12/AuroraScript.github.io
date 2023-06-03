@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var startButton = document.getElementById("startButton");
   var pauseButton = document.getElementById("pauseButton");
   var resetButton = document.getElementById("resetButton");
+  var applySettingsButton = document.getElementById("applySettingsButton"); // Add applySettingsButton variable
   var currentRound = document.getElementById("currentRound");
-  var autoStartToggle = document.getElementById("autoStartToggle");
   var currentScore = document.getElementById("currentScore");
   var difficulty = document.getElementById("difficulty");
   var playerColorInput = document.getElementById("playerColorInput");
@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var gameStarted = false;
   var gamePaused = false;
   var animationId = null;
+
+  // Add game background color
+  canvas.style.backgroundColor = "#313131";
 
   var player = {
     x: canvas.width / 2,
@@ -117,110 +120,133 @@ document.addEventListener("DOMContentLoaded", function () {
         obstacle.speed += 0.2;
         break;
       case "normal":
-        obstacle.speed += 0.4
+        obstacle.speed += 0.4;
         break;
-        case "hard":
-          obstacle.speed += 0.6;
-          break;
-      }
+      case "hard":
+        obstacle.speed += 0.6;
+        break;
     }
-  
-    function startGame() {
-      startButton.disabled = true;
-      pauseButton.disabled = false;
-      resetButton.disabled = false;
-      currentRound.textContent = "Round: 0";
-      score = 0;
-      currentScore.textContent = "Score: " + score;
-      gameStarted = true;
-      gamePaused = false;
-      obstacle.speed = 4;
-      obstacle.x = Math.random() * (canvas.width - obstacle.width);
-      obstacle.y = -obstacle.height;
-      obstacle.color = obstacleColorInput.value;
-      round = 0;
-      startTime = performance.now();
-      animationId = requestAnimationFrame(update);
-    }
-  
-    function stopGame() {
-      startButton.disabled = false;
-      pauseButton.disabled = true;
-      resetButton.disabled = true;
-      gameStarted = false;
-      gamePaused = false;
-      obstacle.speed = 0;
-      obstacle.y = -obstacle.height;
-      round = 0;
-      currentRound.textContent = "Round: 0";
-      cancelAnimationFrame(animationId);
-    }
-  
-    function pauseGame() {
-      if (gameStarted) {
-        gamePaused = !gamePaused;
-        if (gamePaused) {
-          pauseButton.textContent = "Resume";
-          cancelAnimationFrame(animationId);
-        } else {
-          pauseButton.textContent = "Pause";
-          startTime += performance.now();
-          animationId = requestAnimationFrame(update);
-        }
-      }
-    }
-  
-    function resetGame() {
-      stopGame();
-      player.x = canvas.width / 2;
-      player.y = canvas.height - 30;
-      player.direction = 0;
-      score = 0;
-      currentScore.textContent = "Score: " + score;
-    }
-  
-    function changePlayerColor() {
-      player.color = playerColorInput.value;
-    }
-  
-    function changeObstacleColor() {
-      obstacle.color = obstacleColorInput.value;
-    }
-  
-    function handleKeyDown(event) {
-      if (event.keyCode === 37) {
-        player.direction = -1;
-      } else if (event.keyCode === 39) {
-        player.direction = 1;
-      }
-    }
-  
-    function handleKeyUp(event) {
-      if (event.keyCode === 37 || event.keyCode === 39) {
-        player.direction = 0;
-      }
-    }
-  
-    function toggleAutoStart() {
-      if (autoStartToggle.checked) {
-        startButton.style.display = "none";
-      } else {
-        startButton.style.display = "block";
-      }
-    }
-  
-    startButton.addEventListener("click", startGame);
-    pauseButton.addEventListener("click", pauseGame);
-    resetButton.addEventListener("click", resetGame);
-    playerColorInput.addEventListener("input", changePlayerColor);
-    obstacleColorInput.addEventListener("input", changeObstacleColor);
-    autoStartToggle.addEventListener("change", toggleAutoStart);
-    document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("keyup", handleKeyUp);
-  
-    // Initial setup
+  }
+
+  function startGame() {
+    startButton.disabled = true;
+    pauseButton.disabled = false;
+    resetButton.disabled = false;
+    currentRound.textContent = "Round: 0";
+    score = 0;
+    currentScore.textContent = "Score: " + score;
+    gameStarted = true;
+    gamePaused = false;
+    obstacle.speed = 4;
+    obstacle.x = Math.random() * (canvas.width - obstacle.width);
+    obstacle.y = -obstacle.height;
+    obstacle.color = obstacleColorInput.value;
+    round = 0;
+    startTime = performance.now();
+    animationId = requestAnimationFrame(update);
+  }
+
+  function stopGame() {
+    startButton.disabled = false;
     pauseButton.disabled = true;
     resetButton.disabled = true;
+    gameStarted = false;
+    gamePaused = false;
+    obstacle.speed = 0;
+    obstacle.y = -obstacle.height;
+    round = 0;
+    currentRound.textContent = "Round: 0";
+    cancelAnimationFrame(animationId);
+  }
+
+  function pauseGame() {
+    if (gameStarted) {
+      gamePaused = !gamePaused;
+      if (gamePaused) {
+        pauseButton.textContent = "Resume";
+        cancelAnimationFrame(animationId);
+      } else {
+        pauseButton.textContent = "Pause";
+        startTime += performance.now();
+        animationId = requestAnimationFrame(update);
+      }
+    }
+  }
+
+  function resetGame() {
+    stopGame();
+    player.x = canvas.width / 2;
+    player.y = canvas.height - 30;
+    player.direction = 0;
+    score = 0;
+    currentScore.textContent = "Score: " + score;
+  }
+
+  function changePlayerColor() {
+    player.color = playerColorInput.value;
+  }
+
+  function changeObstacleColor() {
+    obstacle.color = obstacleColorInput.value;
+  }
+
+  function handleKeyDown(event) {
+    if (event.keyCode === hotkeyCodes.start) {
+      startGame();
+    } else if (event.keyCode === hotkeyCodes.pause) {
+      pauseGame();
+    } else if (event.keyCode === hotkeyCodes.stop) {
+      resetGame();
+    } else if (event.keyCode === 37) {
+      player.direction = -1;
+    } else if (event.keyCode === 39) {
+      player.direction = 1;
+    }
+  }
+
+  function handleKeyUp(event) {
+    if (event.keyCode === 37 || event.keyCode === 39) {
+      player.direction = 0;
+    }
+  }
+
+  function toggleAutoStart() {
+    if (autoStartToggle.checked) {
+      startButton.style.display = "none";
+    } else {
+      startButton.style.display = "block";
+    }
+  }
+
+  function applySettings() {
     toggleAutoStart();
-  });
-  
+    difficulty.disabled = true;
+    playerColorInput.disabled = true;
+    obstacleColorInput.disabled = true;
+  }
+
+ // Define hotkey codes
+ var hotkeyCodes = {
+  start: 69,  // E
+  pause: 82,  // R
+  stop: 84,   // T
+};
+
+  // Add event listeners for hotkeys
+  document.addEventListener("keydown", handleKeyDown);
+  document.addEventListener("keyup", handleKeyUp);
+
+  startButton.addEventListener("click", startGame);
+  pauseButton.addEventListener("click", pauseGame);
+  resetButton.addEventListener("click", resetGame);
+  playerColorInput.addEventListener("input", changePlayerColor);
+  obstacleColorInput.addEventListener("input", changeObstacleColor);
+  autoStartToggle.addEventListener("change", toggleAutoStart);
+  applySettingsButton.addEventListener("click", applySettings);
+
+  // Initial setup
+  pauseButton.disabled = true;
+  resetButton.disabled = true;
+})();
+
+
