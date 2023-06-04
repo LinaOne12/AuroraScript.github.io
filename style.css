@@ -1,0 +1,170 @@
+body {
+  background-color: #161616;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00aaff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+canvas#gameCanvas {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #292929;
+  color: #fff;
+  padding: 20px;
+  border: 2px solid #00aaff;
+  border-radius: 4px;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+#descriptionContainer,
+#settingsContainer,
+#controlsContainer {
+  width: 300px;
+}
+
+#infoContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#gameOverContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#changelogsContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.changelog {
+  width: 80%;
+  max-width: 800px;
+  background-color: #292929;
+  color: #fff;
+  padding: 20px;
+  border: 2px solid #00aaff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 10px 0;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0080ff;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button hover styles */
+.btn:hover {
+  background-color: #0059b3;
+}
+
+/* Start button */
+#startButton {
+  background-color: #4caf50;
+}
+
+#startButton:hover {
+  background-color: #45a049;
+}
+
+/* Pause button */
+#pauseButton {
+  background-color: #ffc107;
+}
+
+#pauseButton:hover {
+  background-color: #ffab00;
+}
+
+/* Reset button */
+#resetButton {
+  background-color: #f44336;
+}
+
+#resetButton:hover {
+  background-color: #d32f2f;
+}
