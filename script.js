@@ -216,36 +216,27 @@ document.addEventListener("DOMContentLoaded", function () {
   resetButton.addEventListener("click", resetGame);
   applySettingsButton.addEventListener("click", applySettings);
 
-  // Touch controls
-  let touchStartX = null;
+  // Mobile touch controls
+  const leftArrow = document.getElementById("leftArrow");
+  const rightArrow = document.getElementById("rightArrow");
 
   function handleTouchStart(event) {
-    touchStartX = event.touches[0].clientX;
-  }
+    const touch = event.touches[0];
+    const touchX = touch.clientX;
 
-  function handleTouchMove(event) {
-    if (!touchStartX) {
-      return;
-    }
-
-    const touchCurrentX = event.touches[0].clientX;
-    const touchDeltaX = touchCurrentX - touchStartX;
-
-    if (touchDeltaX > 0) {
-      player.direction = 1; // Move right
-    } else if (touchDeltaX < 0) {
+    if (touchX < window.innerWidth / 2) {
       player.direction = -1; // Move left
     } else {
-      player.direction = 0; // No movement
+      player.direction = 1; // Move right
     }
   }
 
   function handleTouchEnd() {
-    touchStartX = null;
     player.direction = 0; // No movement
   }
 
-  canvas.addEventListener("touchstart", handleTouchStart);
-  canvas.addEventListener("touchmove", handleTouchMove);
-  canvas.addEventListener("touchend", handleTouchEnd);
+  leftArrow.addEventListener("touchstart", handleTouchStart);
+  leftArrow.addEventListener("touchend", handleTouchEnd);
+  rightArrow.addEventListener("touchstart", handleTouchStart);
+  rightArrow.addEventListener("touchend", handleTouchEnd);
 });

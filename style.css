@@ -10,9 +10,6 @@ body {
   justify-content: center;
 }
 
-
-
-
 nav {
   background-color: #333;
   color: #fff;
@@ -235,4 +232,12 @@ p {
 
 .arrow:hover {
   background-color: #00aaff;
+}
+
+
+ /* Hide arrow elements on desktop */
+ @media (min-width: 768px) {
+  .arrow-container {
+    display: none;
+  }
 }
