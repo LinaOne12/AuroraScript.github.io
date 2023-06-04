@@ -51,14 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updatePlayer() {
-    if (player.direction === -1 && player.x > 0) {
-      player.x -= player.speed;
-    } else if (
-      player.direction === 1 &&
-      player.x < canvas.width - player.width
-    ) {
-      player.x += player.speed;
+    player.x += player.direction * player.speed;
+
+    if (player.x < 0) {
+      player.x = 0;
+    } else if (player.x > canvas.width - player.width) {
+      player.x = canvas.width - player.width;
     }
+
+    player.y = canvas.height - player.height; // Set player's y-coordinate to the bottom of the canvas
   }
 
   function updateObstacles() {
@@ -129,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function startGame() {
     if (gameStarted) {
-      return; // Ignore key press if game is already running
+      return; // Ignore button press if game is already running
     }
 
     startButton.disabled = true;
@@ -147,150 +148,104 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < 5; i++) {
       const obstacle = {
         x: Math.random() * (canvas.width - 50),
-        y: -(Math.random() * 200),
+        y: Math.random() * (canvas.height - 30),
         width: 50,
-        height: 50,
+        height: 30,
         color: obstacleColorInput.value,
         speed: 2,
       };
+
       obstacles.push(obstacle);
     }
 
     gameStarted = true;
     gamePaused = false;
     update();
-
-    // Play the background music
-    backgroundMusic.currentTime = 0;
-    backgroundMusic.loop = true;
-    backgroundMusic.play();
-  }
-
-  function pauseGame() {
-    if (gamePaused) {
-      pauseButton.textContent = "Pause";
-      gamePaused = false;
-      update();
-
-      // Resume the background music
-      backgroundMusic.play();
-    } else {
-      if (gameStarted) {
-        pauseButton.textContent = "Resume";
-        gamePaused = true;
-
-        // Pause the background music
-        backgroundMusic.pause();
-      }
-    }
+    playBackgroundMusic();
   }
 
   function stopGame() {
+    gameStarted = false;
+    gamePaused = false;
     startButton.disabled = false;
     pauseButton.disabled = true;
     resetButton.disabled = true;
-    gameStarted = false;
     cancelAnimationFrame(animationId);
+  }
 
-    // Pause the background music
-    backgroundMusic.pause();
+  function pauseGame() {
+    if (!gameStarted) {
+      return; // Ignore button press if game is not running
+    }
+
+    gamePaused = !gamePaused;
+    if (gamePaused) {
+      pauseButton.textContent = "Resume";
+    } else {
+      pauseButton.textContent = "Pause";
+      update();
+    }
   }
 
   function resetGame() {
     stopGame();
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // Pause the background music
-    backgroundMusic.pause();
+    startGame();
   }
 
   function drawGameOverText() {
-    // Disable the pause button
-    pauseButton.disabled = true;
-
-    ctx.font = "30px Arial";
-    ctx.fillStyle = "#ff0000";
+    ctx.font = "48px sans-serif";
+    ctx.fillStyle = "#FFFFFF";
     ctx.textAlign = "center";
-    ctx.fillText("You Died", canvas.width / 2, canvas.height / 2);
+    ctx.fillText("Game Over", canvas.width / 2, canvas.height / 2);
+  }
+
+  function playBackgroundMusic() {
+    backgroundMusic.play();
+  }
+
+  function applySettings() {
+    player.color = playerColorInput.value;
+
+    obstacles.forEach(function (obstacle) {
+      obstacle.color = obstacleColorInput.value;
+    });
   }
 
   startButton.addEventListener("click", startGame);
   pauseButton.addEventListener("click", pauseGame);
   resetButton.addEventListener("click", resetGame);
+  applySettingsButton.addEventListener("click", applySettings);
 
-  playerColorInput.addEventListener("change", function () {
-    player.color = playerColorInput.value;
-  });
+  // Touch controls
+  let touchStartX = null;
 
-  obstacleColorInput.addEventListener("change", function () {
-    obstacleColorInput.value;
-    obstacles.forEach(function (obstacle) {
-      obstacle.color = obstacleColorInput.value;
-    });
-  });
+  function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+  }
 
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "e" || event.key === "E") {
-      startGame();
-    } else if (event.key === "r" || event.key === "R") {
-      pauseGame();
-    } else if (event.key === "t" || event.key === "T") {
-      resetGame();
-    } else if (event.key === "ArrowLeft") {
-      player.direction = -1;
-    } else if (event.key === "ArrowRight") {
-      player.direction = 1;
-    }
-  });
-
-  document.addEventListener("keyup", function (event) {
-    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
-      player.direction = 0;
-    }
-  });
-
-  let isTouching = false;
-
-  // Touch events for mobile devices
-  canvas.addEventListener("touchstart", function (event) {
-    event.preventDefault();
-    startGame();
-    isTouching = true;
-  });
-
-  canvas.addEventListener("touchend", function (event) {
-    event.preventDefault();
-    pauseGame();
-    isTouching = false;
-  });
-
-  canvas.addEventListener("touchmove", function (event) {
-    event.preventDefault();
-    if (!isTouching) return;
-    
-    const touchX = event.touches[0].clientX;
-    const touchY = event.touches[0].clientY;
-    const canvasRect = canvas.getBoundingClientRect();
-
-    player.x = touchX - canvasRect.left - player.width / 2;
-    player.y = touchY - canvasRect.top - player.height / 2;
-
-    // Keep the player within the canvas bounds
-    if (player.x < 0) {
-      player.x = 0;
-    } else if (player.x + player.width > canvas.width) {
-      player.x = canvas.width - player.width;
+  function handleTouchMove(event) {
+    if (!touchStartX) {
+      return;
     }
 
-    if (player.y < 0) {
-      player.y = 0;
-    } else if (player.y + player.height > canvas.height) {
-      player.y = canvas.height - player.height;
-    }
-  });
+    const touchCurrentX = event.touches[0].clientX;
+    const touchDeltaX = touchCurrentX - touchStartX;
 
-  canvas.addEventListener("touchcancel", function (event) {
-    event.preventDefault();
-    isTouching = false;
-  });
+    if (touchDeltaX > 0) {
+      player.direction = 1; // Move right
+    } else if (touchDeltaX < 0) {
+      player.direction = -1; // Move left
+    } else {
+      player.direction = 0; // No movement
+    }
+  }
+
+  function handleTouchEnd() {
+    touchStartX = null;
+    player.direction = 0; // No movement
+  }
+
+  canvas.addEventListener("touchstart", handleTouchStart);
+  canvas.addEventListener("touchmove", handleTouchMove);
+  canvas.addEventListener("touchend", handleTouchEnd);
 });
