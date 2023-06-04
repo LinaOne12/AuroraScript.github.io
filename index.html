@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Dash</title>
+  <meta name="description" content="Color dash | Home Page">
+  <link rel="stylesheet" href="/assets/stylesheets/style.css">
+
+  
+</head>
+
+
+<body>
+
+
+  <nav>
+    <ul>
+      <li><a href="/index.html">Game</a></li>
+      <li><a href="/assets/src/changelogs.html">Changelogs</a></li>
+    </ul>
+  </nav>
+
+  <div id="gameContainer">
+    <canvas id="gameCanvas" width="800" height="800"></canvas>
+
+    <div id="controlsContainer" class="container">
+      <button id="startButton" class="btn">Start</button>
+      <button id="pauseButton" class="btn">Pause</button>
+      <button id="resetButton" class="btn">Reset</button>
+      <p>E (Hotkey for Start)</p>
+      <p>R (Hotkey for Pause)</p>
+      <p>T (Hotkey for Reset)</p>
+    </div>
+
+    <div id="settingsContainer" class="container">
+      <h3>Settings</h3>
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty" class="btn">
+        <option value="easy">Easy</option>
+        <option value="normal">Normal</option>
+        <option value="hard">Hard</option>
+      </select>
+      <br>
+      <label for="playerColorInput">Player Color:</label>
+      <input type="color" id="playerColorInput" value="#00D5FF">
+      <br>
+      <label for="obstacleColorInput">Obstacle Color:</label>
+      <input type="color" id="obstacleColorInput" value="#FF0000">
+      <br>
+      <button id="applySettingsButton" class="btn">Apply Settings</button>
+    </div>
+
+    <div id="descriptionContainer" class="container">
+      <h3>Description</h3>
+      <p>Use the left and right arrow keys or swipe left and right to move the player and avoid the falling obstacles.</p>
+    </div>
+
+    <div id="infoContainer" class="container">
+      <p id="currentRound">Round: 0</p>
+      <p id="currentScore">Score: 0</p>
+    </div>
+  </div>
+
+  <audio id="backgroundMusic" src="/assets/music/Unknown Brain x Rival - Control (ft. Jex) [Lyric Video].mp3" loop></audio>
+
+  <script src="/assets/javascript/script.js"></script>
+</body>
+</html>
