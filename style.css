@@ -168,3 +168,37 @@ p {
 #resetButton:hover {
   background-color: #d32f2f;
 }
+
+@media (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+  #gameContainer {
+    margin-top: 20px;
+  }
+
+  #descriptionContainer,
+  #settingsContainer,
+  #controlsContainer {
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for screens up to 480px wide */
+  #gameContainer {
+    margin-top: 10px;
+  }
+
+  #descriptionContainer,
+  #settingsContainer,
+  #controlsContainer {
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+  }
+}

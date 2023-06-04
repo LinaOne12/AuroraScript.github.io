@@ -248,4 +248,49 @@ document.addEventListener("DOMContentLoaded", function () {
       player.direction = 0;
     }
   });
+
+  let isTouching = false;
+
+  // Touch events for mobile devices
+  canvas.addEventListener("touchstart", function (event) {
+    event.preventDefault();
+    startGame();
+    isTouching = true;
+  });
+
+  canvas.addEventListener("touchend", function (event) {
+    event.preventDefault();
+    pauseGame();
+    isTouching = false;
+  });
+
+  canvas.addEventListener("touchmove", function (event) {
+    event.preventDefault();
+    if (!isTouching) return;
+    
+    const touchX = event.touches[0].clientX;
+    const touchY = event.touches[0].clientY;
+    const canvasRect = canvas.getBoundingClientRect();
+
+    player.x = touchX - canvasRect.left - player.width / 2;
+    player.y = touchY - canvasRect.top - player.height / 2;
+
+    // Keep the player within the canvas bounds
+    if (player.x < 0) {
+      player.x = 0;
+    } else if (player.x + player.width > canvas.width) {
+      player.x = canvas.width - player.width;
+    }
+
+    if (player.y < 0) {
+      player.y = 0;
+    } else if (player.y + player.height > canvas.height) {
+      player.y = canvas.height - player.height;
+    }
+  });
+
+  canvas.addEventListener("touchcancel", function (event) {
+    event.preventDefault();
+    isTouching = false;
+  });
 });
