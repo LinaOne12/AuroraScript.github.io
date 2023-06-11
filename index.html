@@ -5,69 +5,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Color Rush</title>
-  <meta name="description" content="Color Rush | Home Page">
+  <meta name="description" content="Color Rush | Home">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Game</a></li>
-      <li><a href="changelogs.html">Changelogs</a></li>
-    </ul>
-  </nav>
   
+  <header>
+    <div class="navbar">
+      <a href="https://github.com/LinaOne12/ColorRush.github.io" class="logo" title="ColorRush" target="_blank">Color Rush</a>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="release.html">Release Notes</a></li>
+      </ul>
+    </div>
+  </header>
 
-  <div id="gameContainer">
+  <header> Game version <b> 1.3</b> has just been released! Check out the <a href="release.html">Release Notes</a> for further details.</header>
+
+  <div id="gameContainer" class="container">
     <canvas id="gameCanvas" width="800" height="800"></canvas>
-
-    <h2> Attention: Game is broken atm for desktop. A <br> fix will be out later today to solve this problem.</h2>
-
-    <div class="arrow-container">
-      <div class="arrow" id="leftArrow">&larr;</div>
-      <div class="arrow" id="rightArrow">&rarr;</div>
-    </div>
-
-    <div id="controlsContainer" class="container">
-      <button id="startButton" class="btn">Start</button>
-      <button id="pauseButton" class="btn">Pause</button>
-      <button id="resetButton" class="btn">Reset</button>
-      <p>E (Hotkey for Start)</p>
-      <p>R (Hotkey for Pause)</p>
-      <p>T (Hotkey for Reset)</p>
-    </div>
-    
-
-    <div id="settingsContainer" class="container">
-      <h3>Settings</h3>
-      <label for="difficulty">Difficulty:</label>
-      <select id="difficulty" class="btn">
-        <option value="easy">Easy</option>
-        <option value="normal">Normal</option>
-        <option value="hard">Hard</option>
-      </select>
-      <br>
-      <label for="playerColorInput">Player Color:</label>
-      <input type="color" id="playerColorInput" value="#00D5FF">
-      <br>
-      <label for="obstacleColorInput">Obstacle Color:</label>
-      <input type="color" id="obstacleColorInput" value="#FF0000">
-      <br>
-      <button id="applySettingsButton" class="btn">Apply Settings</button>
-    </div>
-
-    <div id="descriptionContainer" class="container">
-      <h3>Description</h3>
-      <p>Use the left and right arrow keys or swipe left and right to move the player and avoid the falling obstacles.</p>
-    </div>
-
-    <div id="infoContainer" class="container">
-      <p id="currentRound">Round: 0</p>
-      <p id="currentScore">Score: 0</p>
-    </div>
   </div>
 
-  <audio id="backgroundMusic" src="Unknown Brain x Rival - Control (ft. Jex) [Lyric Video].mp3" loop></audio>
+  <div id="controlsContainer" class="container">
+    <button id="startButton" class="btn">Start</button>
+    <button id="pauseButton" class="btn">Pause</button>
+    <button id="resetButton" class="btn">Reset</button>
+    <p>E (Hotkey for Start)</p>
+    <p>R (Hotkey for Pause)</p>
+    <p>T (Hotkey for Reset)</p>
+  </div>
+
+  <div id="settingsContainer" class="container">
+    <h3>Settings</h3>
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty" class="btn">
+      <option value="easy">Easy</option>
+      <option value="normal">Normal</option>
+      <option value="hard">Hard</option>
+    </select>
+    <br>
+    <label for="playerColorInput">Player Color:</label>
+    <input type="color" id="playerColorInput" value="#00D5FF">
+    <br>
+    <label for="obstacleColorInput">Obstacle Color:</label>
+    <input type="color" id="obstacleColorInput" value="#FF0000">
+    <br>
+    <button id="applySettingsButton" class="btn">Apply Settings</button>
+  </div>
+
+  <div id="infoContainer" class="container">
+    <h3>Info</h3>
+    <p id="currentRound">Round: 0</p>
+    <p id="currentScore">Score: 0</p>
+  </div>
+
+  <audio id="backgroundMusic" src="music.mp3" loop></audio>
 
   <script src="script.js"></script>
 </body>
