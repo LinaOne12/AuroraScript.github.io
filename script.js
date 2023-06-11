@@ -215,10 +215,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  function handleTouchstart(event) {
+    if (event.touches.length === 1) {
+      const touchX = event.touches[0].clientX;
+      const canvasRect = canvas.getBoundingClientRect();
+      const canvasX = touchX - canvasRect.left;
+
+      if (canvasX < canvas.width / 2) {
+        player.direction = -1;
+      } else {
+        player.direction = 1;
+      }
+    }
+  }
+
+  function handleTouchend() {
+    player.direction = 0;
+  }
+
   startButton.addEventListener("click", startGame);
   pauseButton.addEventListener("click", pauseGame);
   resetButton.addEventListener("click", resetGame);
   applySettingsButton.addEventListener("click", applySettings);
   document.addEventListener("keydown", handleKeydown);
   document.addEventListener("keyup", handleKeyup);
+  canvas.addEventListener("touchstart", handleTouchstart);
+  canvas.addEventListener("touchend", handleTouchend);
 });
