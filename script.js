@@ -8,10 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentRound = document.getElementById("currentRound");
   const currentScore = document.getElementById("currentScore");
 
-  const difficulty = document.getElementById("difficulty");
   const playerColorInput = document.getElementById("playerColorInput");
   const obstacleColorInput = document.getElementById("obstacleColorInput");
-  const applySettingsButton = document.getElementById("applySettingsButton");
+  const resetPlayerColorBtn = document.getElementById("resetPlayerColorBtn");
+  const resetObstacleColorBtn = document.getElementById("resetObstacleColorBtn");
+  const toggleCursorBtn = document.getElementById("toggleCursorBtn");
 
   const backgroundMusic = document.getElementById("backgroundMusic");
 
@@ -130,7 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
       startButton.disabled = true;
       pauseButton.disabled = false;
       resetButton.disabled = true;
-      applySettingsButton.disabled = true;
 
       backgroundMusic.currentTime = 0; // Reset music to the beginning
       backgroundMusic.play();
@@ -146,13 +146,29 @@ document.addEventListener("DOMContentLoaded", function () {
       pauseButton.textContent = "Resume";
       backgroundMusic.pause();
       cancelAnimationFrame(animationId);
+      showGamePaused(); // Display "Game Paused" message
     } else if (gameStarted && gamePaused) {
       gamePaused = false;
       pauseButton.textContent = "Pause";
       backgroundMusic.play();
+      hideGamePaused(); // Hide "Game Paused" message
       draw();
     }
   }
+  
+  function showGamePaused() {
+    ctx.fillStyle = "#000";
+    ctx.fillRect(0, canvas.height / 2 - 30, canvas.width, 60);
+    ctx.fillStyle = "#FFF";
+    ctx.font = "30px Arial";
+    ctx.fillText("Game Paused!", canvas.width / 2 - 95, canvas.height / 2 + 10);
+  }
+  
+  
+  function hideGamePaused() {
+    clearCanvas();
+  }
+  
 
   function stopGame() {
     gameStarted = false;
@@ -160,7 +176,6 @@ document.addEventListener("DOMContentLoaded", function () {
     startButton.disabled = false;
     pauseButton.disabled = true;
     resetButton.disabled = false;
-    applySettingsButton.disabled = false;
     backgroundMusic.pause();
     cancelAnimationFrame(animationId);
   }
@@ -187,19 +202,38 @@ document.addEventListener("DOMContentLoaded", function () {
     backgroundMusic.volume = difficulty.value === "easy" ? 0.2 : 0.5;
   }
 
+  function resetPlayerColor() {
+    playerColorInput.value = "#00D5FF";
+    player.color = "#00D5FF";
+  }
+
+  function resetObstacleColor() {
+    obstacleColorInput.value = "#FF0000";
+  }
+
+  function toggleCursorVisibility() {
+    var bodyElement = document.getElementsByTagName("body")[0];
+    bodyElement.style.cursor = bodyElement.style.cursor === "none" ? "default" : "none";
+  }
+
   function handleKeydown(event) {
     if (event.key === "ArrowLeft" || event.key === "Left") {
       player.direction = -1;
     } else if (event.key === "ArrowRight" || event.key === "Right") {
       player.direction = 1;
+    } else if (event.key === "q" || event.key === "Q") {
+      toggleCursorVisibility();
     } else if (event.key === "e" || event.key === "E") {
       startGame();
     } else if (event.key === "r" || event.key === "R") {
       pauseGame();
     } else if (event.key === "t" || event.key === "T") {
       resetGame();
+    } else if (event.key === "y" || event.key === "Y") {
+      toggleCursorVisibility();
     }
   }
+
 
   function handleKeyup(event) {
     if (
@@ -218,7 +252,11 @@ document.addEventListener("DOMContentLoaded", function () {
   startButton.addEventListener("click", startGame);
   pauseButton.addEventListener("click", pauseGame);
   resetButton.addEventListener("click", resetGame);
-  applySettingsButton.addEventListener("click", applySettings);
+  playerColorInput.addEventListener("input", applySettings);
+  obstacleColorInput.addEventListener("input", applySettings);
+  resetPlayerColorBtn.addEventListener("click", resetPlayerColor);
+  resetObstacleColorBtn.addEventListener("click", resetObstacleColor);
+  toggleCursorBtn.addEventListener("click", toggleCursorVisibility);
   document.addEventListener("keydown", handleKeydown);
   document.addEventListener("keyup", handleKeyup);
 });
