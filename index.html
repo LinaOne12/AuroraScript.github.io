@@ -6,10 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Color Rush</title>
-  <link rel="icon" href="logo_16x16.png" type="image/png" sizes="16x16">
-<link rel="icon" href="logo_32x32.png" type="image/png" sizes="32x32">
-<link rel="icon" href="logo_64x64.png" type="image/png" sizes="64x64">
-
+  
   <meta name="description" content="Color Rush | Home">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,8 +15,8 @@
 
   <header>
     <div class="navbar">
-      <a href="https://github.com/LinaOne12/ColorRush.github.io" class="logo" title="ColorRush"
-        target="_blank">Color Rush</a>
+      <a href="index.html" class="logo" title="ColorRush" target="_blank">Color
+        Rush</a>
       <ul class="menu">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="release.html">Release Notes</a></li>
@@ -28,37 +25,32 @@
   </header>
 
   <header>
-    Color Rush version <b>1.4</b> has just been released! Check out the <a href="release.html">Release Notes</a> for
+    Color Rush version <b>1.5</b> has just been released! Check out the <a href="release.html">Release Notes</a> for
     further details.
   </header>
 
   <div id="gameContainer" class="container">
     <canvas id="gameCanvas" width="1000" height="800"></canvas>
   </div>
+  <p> My <a href="https://github.com/LinaOne12/ColorRush.github.io" target="_blank">Github </a></p>
 
   <div id="controlsContainer" class="container">
     <h3>Hotkeys</h3>
-    <button id="startButton" class="btn">Start</button>
-    <button id="pauseButton" class="btn">Pause</button>
-    <button id="resetButton" class="btn">Reset</button>
-    <button id="toggleCursorBtn" class="btn">Toggle Cursor</button>
-    <p>E (Hotkey for Start)</p>
-    <p>R (Hotkey for Pause)</p>
-    <p>T (Hotkey for Reset)</p>
-    <p>Y or Q (Hotkey for Cursor)</p>
+    <button id="startButton" class="btn">Start (E)</button>
+    <button id="pauseButton" class="btn">Pause (R)</button>
+    <button id="resetButton" class="btn">Reset (T)</button>
+    <button id="toggleCursorBtn" class="btn">Toggle Cursor (Y)</button>
   </div>
 
   <div id="settingsContainer" class="container">
     <h3>Options</h3>
     <label for="playerColorInput">Player Color:</label>
+    <br>
     <input type="color" id="playerColorInput" value="#00D5FF">
     <br>
-    <label for="obstacleColorInput">Obstacle Color:</label>
-    <input type="color" id="obstacleColorInput" value="#FF0000">
-    <br>
     <button id="resetPlayerColorBtn" class="btn">Reset Player Color</button>
-    <button id="resetObstacleColorBtn" class="btn">Reset Obstacle Color</button>
   </div>
+  
 
   <div id="infoContainer" class="container">
     <h3>Info</h3>
@@ -70,6 +62,6 @@
 
   <script src="script.js"></script>
 
-  </body>
+</body>
 
-  </html>
+</html>

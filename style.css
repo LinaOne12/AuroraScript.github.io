@@ -329,3 +329,8 @@ header {
 a {
   color: #00aaff;
 }
+
+p {
+  text-align: center;
+  font-size: 23px;
+}
