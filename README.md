@@ -1,3 +1,3 @@
 # LinaScript
 
-Website Url: https://linaone12.github.io/LinaScript.github.io/ 
+Website Url: https://linaone12.github.io/AuroraScript.github.io/
