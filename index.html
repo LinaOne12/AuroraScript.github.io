@@ -12,6 +12,7 @@
     <h1>Resident Evil Kingdom</h1>
   </header>
 
+  
   <nav>
     <ul>
       <li><a href="index.html" class="nav-link">Home</a></li>
@@ -24,8 +25,26 @@
           <li><a href="#">Resident Evil 5</a></li>
         </ul>
       </li>
+      <li>
+        <a href="#" class="nav-link">Website</a>
+        <ul class="sub-menu">
+          <li><a href="web_patch-notes.html">Patch Notes</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
+
+   
+  <div class="notification" id="notification">
+    <span class="close-notification" onclick="hideNotification()">&times;</span>
+    <p>New Update Available!</p>
+    <p>Click the button below to view the patch notes.</p>
+    <a href="web_patch-notes.html">View Patch Notes</a>
+    <button id="dontShowAgain" onclick="resetNotificationPreference()">Don't show again</button>
+  </div>
+  
+  
+  
 
   <main>
     <section id="welcome">

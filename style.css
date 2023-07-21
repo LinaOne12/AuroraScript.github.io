@@ -238,6 +238,68 @@ footer p {
 }
 
 
+#patch-notes {
+  margin: 2rem 0;
+}
+
+.patch {
+  border: 1px solid #c70000;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.patch h3 {
+  margin-top: 0;
+}
+
+.patch ul {
+  margin-top: 0;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0.5rem 0;
+}
+
+.notification {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.close-notification {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#dontShowAgain {
+  background-color: #8b0000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+#dontShowAgain:hover {
+  background-color:  #c70000;
+}
+
 
  /* Media Queries */
 @media only screen and (max-width: 768px) {
@@ -253,12 +315,13 @@ footer p {
 
   nav li {
     display: block;
-    margin-bottom: 10px; /* Add spacing between each navigation item */
+    margin-bottom: 5px; /* Add spacing between each navigation item */
   }
 
   nav a {
     color: #fff;
     text-decoration: none;
+    display: block;
     padding: 12px 18px;
     border-radius: 8px;
     background-color: #8b0000;
@@ -302,5 +365,16 @@ footer p {
 
   .game img {
     max-height: 120px; /* Adjust image height as needed */
+  }
+
+  /* New Styles */
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    padding: 0;
   }
 }

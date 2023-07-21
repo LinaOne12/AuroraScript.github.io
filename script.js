@@ -70,4 +70,58 @@ function openModal(imgSrc) {
         closeModal();
       }
     });
+
+
+
+
+
+
+    
+    
+
+  // Function to check if the notification should be shown or not
+function shouldShowNotification() {
+      return localStorage.getItem('showNotification') !== 'false';
+    }
+    
+    // Function to show the notification popup
+    function showNotification() {
+      if (shouldShowNotification()) {
+        const notification = document.getElementById('notification');
+        notification.style.display = 'block';
+      }
+    }
+    
+    // Function to close the notification popup
+    function closeNotification() {
+      const notification = document.getElementById('notification');
+      notification.style.display = 'none';
+    }
+    
+    // Function to hide the notification and set "Don't show again" preference
+    function hideNotification() {
+      const notification = document.getElementById('notification');
+      notification.style.display = 'none';
+    
+      // Set the "showNotification" flag in localStorage to false
+      localStorage.setItem('showNotification', 'false');
+    }
+    
+    // Function to reset the "Don't show again" preference
+    function resetNotificationPreference() {
+      localStorage.setItem('showNotification', 'true');
+    }
+    
+    // Check if there's a new update (You can trigger this function when needed)
+    function checkForUpdate() {
+      // Your logic to check for updates goes here
+    
+      // For demonstration purposes, I'm just setting a timer to show the notification after 3 seconds.
+      setTimeout(() => {
+        showNotification();
+      }, 3000);
+    }
+    
+    // Call the function to check for updates on page load
+    window.addEventListener('load', checkForUpdate);
     
