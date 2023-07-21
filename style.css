@@ -97,6 +97,7 @@ main {
 }
 
 h2 {
+  text-align: center;
   color:#c70000;
   border-bottom: 2px solid #8b0000;
   padding-bottom: 5px;
@@ -170,9 +171,6 @@ h2 {
   right: 20px;
   cursor: pointer;
 }
-
-
-
 
 .character-list {
   display: flex;
