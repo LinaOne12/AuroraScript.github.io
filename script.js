@@ -29,3 +29,37 @@ document.addEventListener('click', (event) => {
     });
   }
 });
+
+
+// Function to open the image preview modal
+function openModal(imgSrc) {
+      const modal = document.getElementById('imagePreviewModal');
+      const modalImg = document.getElementById('imgPreview');
+    
+      modal.style.display = 'block';
+      modalImg.src = imgSrc;
+    }
+    
+    // Function to close the image preview modal
+    function closeModal() {
+      const modal = document.getElementById('imagePreviewModal');
+      modal.style.display = 'none';
+    }
+    
+    // Add click event listeners to all game images
+    const gameImages = document.querySelectorAll('.game img');
+    gameImages.forEach((image) => {
+      image.addEventListener('click', () => {
+        const imgSrc = image.getAttribute('src');
+        openModal(imgSrc);
+      });
+    });
+    
+    // Close modal when clicking outside the modal content
+    const modal = document.getElementById('imagePreviewModal');
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+    

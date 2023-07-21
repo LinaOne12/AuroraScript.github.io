@@ -8,81 +8,85 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <header>
-            <h1>Resident Evil Kingdom</h1>
-          </header>
-          
+  <header>
+    <h1>Resident Evil Kingdom</h1>
+  </header>
 
-          <nav>
-            <ul>
-              <li><a href="#" class="nav-link">Home</a></li>
-              <li>
-                <a href="#" class="nav-link">Games</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Resident Evil 4 Remake</a></li>
-                  <li><a href="#">Resident Evil 4 Remake</a></li>
-                  <li><a href="#">Resident Evil 4 Remake</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li>
+        <a href="#" class="nav-link">Games</a>
+        <ul class="sub-menu">
+          <li><a href="re4r.html">Resident Evil 4 Remake</a></li>
+          <li><a href="#">Resident Evil 3 Remake</a></li>
+          <li><a href="#">Resident Evil 2 Remake</a></li>
+          <li><a href="#">Resident Evil 5</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="welcome">
+      <h2>Welcome to Resident Evil Kingdom</h2>
+      <p>Explore Resident Evil Kingdom.</p>
+    </section>
+
+    <section id="games">
+      <h2>Games</h2>
+      <div class="game-list">
+        <div class="game">
+          <a href="#">
+            <img src="re4r_home.png" alt="Resident Evil 4 Remake" onclick="openModal('re4r_home.png')">
+            <div class="new-label">New!</div>
+            <h3>Resident Evil 4 Remake</h3>
+          </a>
+          <p>Resident Evil 4 is a 2023 survival horror game developed and published by Capcom. It is a remake of the 2005 game Resident Evil 4. Players control<br>the US agent Leon S. Kennedy, who must save Ashley Graham, the daughter of the United States president, from the mysterious Los Illuminados cult.</p>
+        </div>
+
+        <div class="game">
+          <a href="#">
+            <img src="re3r_home.png" alt="Resident Evil 3 Remake" onclick="openModal('re3r_home.png')">
+            <h3>Resident Evil 3 Remake</h3>
+          </a>
+          <p>A terrifying new version of the classic third game in the blockbuster survival horror series, Resident Evil 3 tells the<br>story of S.T.A.R.S. member Jill Valentine, as she escapes from a crumbling Raccoon City, and the relentless Nemesis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="games">
+      <h2>More Games</h2>
+      <div class="game-list">
+        <div class="game">
+          <a href="#">
+            <img src="re2r_home.png" alt="Resident Evil 2 Remake" onclick="openModal('re2r_home.png')">
+            <h3>Resident Evil 2 Remake</h3>
+          </a>
+          <p>Resident Evil 2 is a 2019 survival horror game developed and published by Capcom. It is a remake of the 1998 game Resident Evil 2. The game <br>follows rookie police officer Leon S. Kennedy and college student Claire Redfield as they try to escape from Raccoon City during a zombie apocalypse.</p>
+        </div>
+
+        <div class="game">
+          <a href="#">
+            <img src="re5_home.png" alt="Resident Evil 5" onclick="openModal('re5_home.png')">
+            <h3>Resident Evil 5</h3>
+          </a>
+          <p>Resident Evil 5 is a 2009 action-adventure game developed and published by Capcom. It is the seventh main installment in the Resident Evil series. The<br>game follows Chris Redfield and Sheva Alomar as they investigate a terrorist threat in Kijuju, Africa, and uncover a sinister plot involving bio-organic weapons.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Resident Evil Kingdom. All rights reserved.</p>
+  </footer>
 
 
-          <main>
-            <section id="welcome">
-              <h2>Welcome to Resident Evil Kingdom</h2>
-              <p>Explore Resident Evil Kingdom.</p>
-            </section>
-          
-            <section id="games">
-              <h2>Games</h2>
-              <div class="game-list">
-                <div class="game">
-                  <a href="res4.html">
-                    <img src="re4r_home.png" alt="Resident Evil 4 Remake">
-                    <h3>Resident Evil 4 Remake</h3>
-                  </a>
-                  <p>Resident Evil 4 is a 2023 survival horror game developed and published by Capcom. It is a remake of the 2005 game Resident Evil 4. Players control<br>the US agent Leon S. Kennedy, who must save Ashley Graham, the daughter of the United States president, from the mysterious Los Illuminados cult.</p>
-                </div>
-          
-                <div class="game">
-                  <a href="res3.html">
-                    <img src="re3r_home.png" alt="Resident Evil 3 Remake">
-                    <h3>Resident Evil 3 Remake</h3>
-                  </a>
-                  <p>A terrifying new version of the classic third game in the blockbuster survival horror series, Resident Evil 3 tells the<br>story of S.T.A.R.S. member Jill Valentine, as she escapes from a crumbling Raccoon City, and the relentless Nemesis.</p>
-                </div>
-              </div>
-            </section>
-          
-            <section id="games">
-              <h2>More Games</h2>
-              <div class="game-list">
-                <div class="game">
-                  <a href="res2.html">
-                    <img src="re2r_home.png" alt="Resident Evil 2 Remake">
-                    <h3>Resident Evil 2 Remake</h3>
-                  </a>
-                  <p>Resident Evil 2 is a 2019 survival horror game developed and published by Capcom. It is a remake of the 1998 game Resident Evil 2. The game <br>follows rookie police officer Leon S. Kennedy and college student Claire Redfield as they try to escape from Raccoon City during a zombie apocalypse.</p>
-                </div>
-          
-                <div class="game">
-                  <a href="res5.html">
-                    <img src="re5_home.png" alt="Resident Evil 5">
-                    <h3>Resident Evil 5</h3>
-                  </a>
-                  <p>Resident Evil 5 is a 2009 action-adventure game developed and published by Capcom. It is the seventh main installment in the Resident Evil series. The<br>game follows Chris Redfield and Sheva Alomar as they investigate a terrorist threat in Kijuju, Africa, and uncover a sinister plot involving bio-organic weapons.</p>
-                </div>
-              </div>
-            </section>
-          </main>
+  <div id="imagePreviewModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="imgPreview" class="modal-content" src="" alt="Preview">
+  </div>
 
-        
-          <footer>
-            <p>&copy; 2023 Resident Evil Kingdom. All rights reserved.</p>
-          </footer>
-        
-          <script src="script.js"></script>
-          
-        </body>
-        </html>
+  <script src="script.js"></script>
+</body>
+</html>
