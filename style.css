@@ -16,19 +16,21 @@ header h1 {
 }
 
 nav {
-  text-align: center;
-  margin-top: 20px;
+  background-color: #000;
+  padding: 11px;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
-  display: inline-block;
   position: relative;
+  margin: 0 15px;
 }
 
 nav a {
@@ -36,56 +38,60 @@ nav a {
   text-decoration: none;
   padding: 12px 18px;
   border-radius: 8px;
-  background-color: #8b0000;
   transition: background-color 0.2s ease-in-out;
-  white-space: nowrap;
+  font-weight: bold;
 }
 
 nav a:hover {
-  background-color: #950000;
+  background-color: #8b0000;
 }
 
-nav ul ul {
+
+nav .sub-menu {
   display: none;
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #950000;
-  padding: 0;
+  left: -10px; 
+  background-color: #000;
+  padding: 10px; 
   border-radius: 8px;
   z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 10px; 
+  min-width: 150px; 
 }
 
-nav li:hover ul {
+
+nav li:hover .sub-menu {
   display: block;
 }
 
-nav ul ul li {
+
+nav .sub-menu li {
   display: block;
+  margin: 5px 0; 
 }
 
-nav ul ul li a {
+nav .sub-menu li a {
   padding: 10px 15px;
-  background-color: #8b0000;
   display: block;
+  white-space: nowrap;
+  color: #fff;
+  font-weight: normal;
 }
 
-nav ul ul li a:hover {
-  background-color: #c70000;
+nav .sub-menu li a:hover {
+  background-color: #950000; 
+  color: yellow; 
 }
 
-/* Add space between different dropdown items */
-nav li ul {
-  margin-top: 10px;
-}
 
 main {
   padding: 20px;
 }
 
 h2 {
-  color: #8b0000;
+  color:#c70000;
   border-bottom: 2px solid #8b0000;
   padding-bottom: 5px;
   margin-bottom: 20px;
@@ -173,13 +179,71 @@ footer p {
   margin: 0;
 }
 
-/* Media Queries */
+
+
+ /* Media Queries */
 @media only screen and (max-width: 768px) {
-      .game {
-        width: 100%;
-      }
-    
-      .game img {
-        max-height: 120px; /* Adjust image height as needed */
-      }
-    }
+  nav {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 10px; /* Add spacing between each navigation item */
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: #8b0000;
+    transition: background-color 0.2s ease-in-out;
+    white-space: nowrap;
+  }
+
+  nav a:hover {
+    background-color: #950000;
+  }
+
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #950000;
+    padding: 0;
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  nav li:hover ul {
+    display: block;
+  }
+
+  nav li ul li {
+    display: block;
+    margin: 5px 0; /* Add spacing between each item within the dropdown menu */
+  }
+
+  nav li ul li a {
+    padding: 8px 12px;
+    background-color: #c70000;
+  }
+
+  .game {
+    width: 100%;
+  }
+
+  .game img {
+    max-height: 120px; /* Adjust image height as needed */
+  }
+}
