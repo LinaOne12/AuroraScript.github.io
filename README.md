@@ -1,3 +1,3 @@
-# LinaScript
+# Resident Evil Kingdom
 
-Website Url: https://linaone12.github.io/AuroraScript.github.io/
+Website Url: 
